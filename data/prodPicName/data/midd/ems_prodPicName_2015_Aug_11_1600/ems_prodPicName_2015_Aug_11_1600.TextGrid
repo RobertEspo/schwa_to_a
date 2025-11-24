@@ -1,0 +1,498 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 203.8715419501134 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 203.8715419501134 
+        intervals: size = 121 
+        intervals [1]:
+            xmin = 0 
+            xmax = 18.495744845901818 
+            text = "xxx" 
+        intervals [2]:
+            xmin = 18.495744845901818 
+            xmax = 19.65734031193816 
+            text = "polo" 
+        intervals [3]:
+            xmin = 19.65734031193816 
+            xmax = 23.996885637885246 
+            text = "xxx" 
+        intervals [4]:
+            xmin = 23.996885637885246 
+            xmax = 25.333816268606316 
+            text = "topo" 
+        intervals [5]:
+            xmin = 25.333816268606316 
+            xmax = 29.366525056355123 
+            text = "xxx" 
+        intervals [6]:
+            xmin = 29.366525056355123 
+            xmax = 30.300000000000004 
+            text = "dado" 
+        intervals [7]:
+            xmin = 30.300000000000004 
+            xmax = 33.84204429923431 
+            text = "xxx" 
+        intervals [8]:
+            xmin = 33.84204429923431 
+            xmax = 35.1132242431986 
+            text = "gota" 
+        intervals [9]:
+            xmin = 35.1132242431986 
+            xmax = 36.27481970923495 
+            text = "xxx" 
+        intervals [10]:
+            xmin = 36.27481970923495 
+            xmax = 37.12957863707301 
+            text = "coco" 
+        intervals [11]:
+            xmin = 37.12957863707301 
+            xmax = 38.31309099869494 
+            text = "xxx" 
+        intervals [12]:
+            xmin = 38.31309099869494 
+            xmax = 39.408935777974506 
+            text = "lapiz" 
+        intervals [13]:
+            xmin = 39.408935777974506 
+            xmax = 40.59244813959644 
+            text = "xxx" 
+        intervals [14]:
+            xmin = 40.59244813959644 
+            xmax = 41.491040858605686 
+            text = "caca" 
+        intervals [15]:
+            xmin = 41.491040858605686 
+            xmax = 42.87180528049794 
+            text = "xxx" 
+        intervals [16]:
+            xmin = 42.87180528049794 
+            xmax = 43.74848110392159 
+            text = "arbol" 
+        intervals [17]:
+            xmin = 43.74848110392159 
+            xmax = 44.778575196444386 
+            text = "xxx" 
+        intervals [18]:
+            xmin = 44.778575196444386 
+            xmax = 46.11550582716546 
+            text = "silla" 
+        intervals [19]:
+            xmin = 46.11550582716546 
+            xmax = 47.03601544176029 
+            text = "xxx" 
+        intervals [20]:
+            xmin = 47.03601544176029 
+            xmax = 48.19761090779664 
+            text = "sol" 
+        intervals [21]:
+            xmin = 48.19761090779664 
+            xmax = 48.94725790112528 
+            text = "xxx" 
+        intervals [22]:
+            xmin = 48.94725790112528 
+            xmax = 50.19652094950399 
+            text = "taco" 
+        intervals [23]:
+            xmin = 50.19652094950399 
+            xmax = 52.67313015067581 
+            text = "xxx" 
+        intervals [24]:
+            xmin = 52.67313015067581 
+            xmax = 53.90047630346893 
+            text = "bola" 
+        intervals [25]:
+            xmin = 53.90047630346893 
+            xmax = 54.77715212689258 
+            text = "xxx" 
+        intervals [26]:
+            xmin = 54.77715212689258 
+            xmax = 56.09216586202806 
+            text = "mochila" 
+        intervals [27]:
+            xmin = 56.09216586202806 
+            xmax = 57.34142891040677 
+            text = "xxx" 
+        intervals [28]:
+            xmin = 57.34142891040677 
+            xmax = 58.61260885437107 
+            text = "manzana" 
+        intervals [29]:
+            xmin = 58.61260885437107 
+            xmax = 59.752287424821816 
+            text = "xxx" 
+        intervals [30]:
+            xmin = 59.752287424821816 
+            xmax = 60.84813220410138 
+            text = "libro" 
+        intervals [31]:
+            xmin = 60.84813220410138 
+            xmax = 61.79055871428181 
+            text = "xxx" 
+        intervals [32]:
+            xmin = 61.79055871428181 
+            xmax = 63.10557244941729 
+            text = "sombrero" 
+        intervals [33]:
+            xmin = 63.10557244941729 
+            xmax = 66.91911228131018 
+            text = "xxx" 
+        intervals [34]:
+            xmin = 66.91911228131018 
+            xmax = 67.7783437525668 
+            text = "bala" 
+        intervals [35]:
+            xmin = 67.7783437525668 
+            xmax = 68.96185611418872 
+            text = "xxx" 
+        intervals [36]:
+            xmin = 68.96185611418872 
+            xmax = 69.92619951995474 
+            text = "dodo" 
+        intervals [37]:
+            xmin = 69.92619951995474 
+            xmax = 72.77539594608162 
+            text = "xxx" 
+        intervals [38]:
+            xmin = 72.77539594608162 
+            xmax = 74.22191105473064 
+            text = "palo" 
+        intervals [39]:
+            xmin = 74.22191105473064 
+            xmax = 75.97526270157795 
+            text = "xxx" 
+        intervals [40]:
+            xmin = 75.97526270157795 
+            xmax = 77.33411022788461 
+            text = "gato" 
+        intervals [41]:
+            xmin = 77.33411022788461 
+            xmax = 78.32037052923623 
+            text = "xxx" 
+        intervals [42]:
+            xmin = 78.32037052923623 
+            xmax = 79.70113495112848 
+            text = "mochila" 
+        intervals [43]:
+            xmin = 79.70113495112848 
+            xmax = 80.79697973040804 
+            text = "xxx" 
+        intervals [44]:
+            xmin = 80.79697973040804 
+            xmax = 81.95857519644439 
+            text = "sol" 
+        intervals [45]:
+            xmin = 81.95857519644439 
+            xmax = 84.06259717266116 
+            text = "xxx" 
+        intervals [46]:
+            xmin = 84.06259717266116 
+            xmax = 86.02 
+            text = "gota" 
+        intervals [47]:
+            xmin = 86.02 
+            xmax = 87.24501957599045 
+            text = "xxx" 
+        intervals [48]:
+            xmin = 87.24501957599045 
+            xmax = 88.20936298175647 
+            text = "arbol" 
+        intervals [49]:
+            xmin = 88.20936298175647 
+            xmax = 89.45862603013518 
+            text = "xxx" 
+        intervals [50]:
+            xmin = 89.45862603013518 
+            xmax = 90.88322424319861 
+            text = "sombrero" 
+        intervals [51]:
+            xmin = 90.88322424319861 
+            xmax = 92.19823797833409 
+            text = "xxx" 
+        intervals [52]:
+            xmin = 92.19823797833409 
+            xmax = 93.05299690617215 
+            text = "dodo" 
+        intervals [53]:
+            xmin = 93.05299690617215 
+            xmax = 94.32417685013645 
+            text = "xxx" 
+        intervals [54]:
+            xmin = 94.32417685013645 
+            xmax = 95.24468646473129 
+            text = "caca" 
+        intervals [55]:
+            xmin = 95.24468646473129 
+            xmax = 98.72947286284031 
+            text = "xxx" 
+        intervals [56]:
+            xmin = 98.72947286284031 
+            xmax = 100.26365555383171 
+            text = "dado" 
+        intervals [57]:
+            xmin = 100.26365555383171 
+            xmax = 105.59393372454895 
+            text = "xxx" 
+        intervals [58]:
+            xmin = 105.59393372454895 
+            xmax = 106.90894745968443 
+            text = "palo" 
+        intervals [59]:
+            xmin = 106.90894745968443 
+            xmax = 107.91712465662164 
+            text = "xxx" 
+        intervals [60]:
+            xmin = 107.91712465662164 
+            xmax = 109.23213839175712 
+            text = "manzana" 
+        intervals [61]:
+            xmin = 109.23213839175712 
+            xmax = 112.78267547662291 
+            text = "xxx" 
+        intervals [62]:
+            xmin = 112.78267547662291 
+            xmax = 113.74701888238893 
+            text = "bala" 
+        intervals [63]:
+            xmin = 113.74701888238893 
+            xmax = 117.38522354959709 
+            text = "xxx" 
+        intervals [64]:
+            xmin = 117.38522354959709 
+            xmax = 118.72215418031817 
+            text = "topo" 
+        intervals [65]:
+            xmin = 118.72215418031817 
+            xmax = 120.36592134923751 
+            text = "xxx" 
+        intervals [66]:
+            xmin = 120.36592134923751 
+            xmax = 121.52751681527386 
+            text = "polo" 
+        intervals [67]:
+            xmin = 121.52751681527386 
+            xmax = 122.40419263869751 
+            text = "xxx" 
+        intervals [68]:
+            xmin = 122.40419263869751 
+            xmax = 123.49999999999999 
+            text = "gato" 
+        intervals [69]:
+            xmin = 123.49999999999999 
+            xmax = 124.70993921860314 
+            text = "xxx" 
+        intervals [70]:
+            xmin = 124.70993921860314 
+            xmax = 126.04686984932422 
+            text = "lapiz" 
+        intervals [71]:
+            xmin = 126.04686984932422 
+            xmax = 127.05504704626142 
+            text = "xxx" 
+        intervals [72]:
+            xmin = 127.05504704626142 
+            xmax = 128.1070580343698 
+            text = "coco" 
+        intervals [73]:
+            xmin = 128.1070580343698 
+            xmax = 129.15906902247818 
+            text = "xxx" 
+        intervals [74]:
+            xmin = 129.15906902247818 
+            xmax = 130.3644982796857 
+            text = "silla" 
+        intervals [75]:
+            xmin = 130.3644982796857 
+            xmax = 132.09593303094744 
+            text = "xxx" 
+        intervals [76]:
+            xmin = 132.09593303094744 
+            xmax = 133.21369470581257 
+            text = "taco" 
+        intervals [77]:
+            xmin = 133.21369470581257 
+            xmax = 134.26570569392098 
+            text = "xxx" 
+        intervals [78]:
+            xmin = 134.26570569392098 
+            xmax = 135.33963357761493 
+            text = "libro" 
+        intervals [79]:
+            xmin = 135.33963357761493 
+            xmax = 139.08742272275106 
+            text = "xxx" 
+        intervals [80]:
+            xmin = 139.08742272275106 
+            xmax = 139.9640985461747 
+            text = "bola" 
+        intervals [81]:
+            xmin = 139.9640985461747 
+            xmax = 141.49 
+            text = "xxx" 
+        intervals [82]:
+            xmin = 141.49 
+            xmax = 142.44518029076508 
+            text = "caca" 
+        intervals [83]:
+            xmin = 142.44518029076508 
+            xmax = 143.60677575680143 
+            text = "xxx" 
+        intervals [84]:
+            xmin = 143.60677575680143 
+            xmax = 144.6587867449098 
+            text = "coco" 
+        intervals [85]:
+            xmin = 144.6587867449098 
+            xmax = 146.4121383917571 
+            text = "xxx" 
+        intervals [86]:
+            xmin = 146.4121383917571 
+            xmax = 147.68331833572142 
+            text = "silla" 
+        intervals [87]:
+            xmin = 147.68331833572142 
+            xmax = 150.35717959716357 
+            text = "xxx" 
+        intervals [88]:
+            xmin = 150.35717959716357 
+            xmax = 151.58452574995667 
+            text = "bola" 
+        intervals [89]:
+            xmin = 151.58452574995667 
+            xmax = 153.05295775419128 
+            text = "xxx" 
+        intervals [90]:
+            xmin = 153.05295775419128 
+            xmax = 154.12688563788527 
+            text = "libro" 
+        intervals [91]:
+            xmin = 154.12688563788527 
+            xmax = 158.00617615653493 
+            text = "xxx" 
+        intervals [92]:
+            xmin = 158.00617615653493 
+            xmax = 159.4588574740128 
+            text = "palo" 
+        intervals [93]:
+            xmin = 159.4588574740128 
+            xmax = 160.33000000000007 
+            text = "xxx" 
+        intervals [94]:
+            xmin = 160.33000000000007 
+            xmax = 161.84610542743198 
+            text = "mochila" 
+        intervals [95]:
+            xmin = 161.84610542743198 
+            xmax = 162.810448833198 
+            text = "xxx" 
+        intervals [96]:
+            xmin = 162.810448833198 
+            xmax = 163.84054292572077 
+            text = "gato" 
+        intervals [97]:
+            xmin = 163.84054292572077 
+            xmax = 165.13363976527066 
+            text = "xxx" 
+        intervals [98]:
+            xmin = 165.13363976527066 
+            xmax = 166.38290281364937 
+            text = "sol" 
+        intervals [99]:
+            xmin = 166.38290281364937 
+            xmax = 167.52258138410014 
+            text = "xxx" 
+        intervals [100]:
+            xmin = 167.52258138410014 
+            xmax = 168.6184261633797 
+            text = "polo" 
+        intervals [101]:
+            xmin = 168.6184261633797 
+            xmax = 171.73062533653365 
+            text = "xxx" 
+        intervals [102]:
+            xmin = 171.73062533653365 
+            xmax = 172.76071942905645 
+            text = "bala" 
+        intervals [103]:
+            xmin = 172.76071942905645 
+            xmax = 174.47023728473258 
+            text = "xxx" 
+        intervals [104]:
+            xmin = 174.47023728473258 
+            xmax = 175.82908481103925 
+            text = "manzana" 
+        intervals [105]:
+            xmin = 175.82908481103925 
+            xmax = 179.38409443932358 
+            text = "xxx" 
+        intervals [106]:
+            xmin = 179.38409443932358 
+            xmax = 180.47993921860314 
+            text = "topo" 
+        intervals [107]:
+            xmin = 180.47993921860314 
+            xmax = 181.66345158022506 
+            text = "xxx" 
+        intervals [108]:
+            xmin = 181.66345158022506 
+            xmax = 183.21955116680203 
+            text = "sombrero" 
+        intervals [109]:
+            xmin = 183.21955116680203 
+            xmax = 184.5783986931087 
+            text = "xxx" 
+        intervals [110]:
+            xmin = 184.5783986931087 
+            xmax = 185.54274209887473 
+            text = "taco" 
+        intervals [111]:
+            xmin = 185.54274209887473 
+            xmax = 186.77008825166786 
+            text = "xxx" 
+        intervals [112]:
+            xmin = 186.77008825166786 
+            xmax = 188.01935130004654 
+            text = "lapiz" 
+        intervals [113]:
+            xmin = 188.01935130004654 
+            xmax = 191.37263632464203 
+            text = "xxx" 
+        intervals [114]:
+            xmin = 191.37263632464203 
+            xmax = 192.53423179067838 
+            text = "dado" 
+        intervals [115]:
+            xmin = 192.53423179067838 
+            xmax = 193.60815967437233 
+            text = "xxx" 
+        intervals [116]:
+            xmin = 193.60815967437233 
+            xmax = 194.9450903050934 
+            text = "dodo" 
+        intervals [117]:
+            xmin = 194.9450903050934 
+            xmax = 198.2190979173681 
+            text = "xxx" 
+        intervals [118]:
+            xmin = 198.2190979173681 
+            xmax = 199.38069338340443 
+            text = "gota" 
+        intervals [119]:
+            xmin = 199.38069338340443 
+            xmax = 200.84912538763905 
+            text = "xxx" 
+        intervals [120]:
+            xmin = 200.84912538763905 
+            xmax = 201.94497016691864 
+            text = "arbol" 
+        intervals [121]:
+            xmin = 201.94497016691864 
+            xmax = 203.8715419501134 
+            text = "xxx" 

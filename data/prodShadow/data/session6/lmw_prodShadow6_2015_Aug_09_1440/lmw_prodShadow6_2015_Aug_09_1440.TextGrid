@@ -1,0 +1,1218 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 408.4886848072562 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "silences" 
+        xmin = 0 
+        xmax = 408.4886848072562 
+        intervals: size = 301 
+        intervals [1]:
+            xmin = 0 
+            xmax = 23.974968742299655 
+            text = "xxx" 
+        intervals [2]:
+            xmin = 23.974968742299655 
+            xmax = 25.092730417164812 
+            text = "guku" 
+        intervals [3]:
+            xmin = 25.092730417164812 
+            xmax = 26.736497586084162 
+            text = "xxx" 
+        intervals [4]:
+            xmin = 26.736497586084162 
+            xmax = 27.613173409507816 
+            text = "daka" 
+        intervals [5]:
+            xmin = 27.613173409507816 
+            xmax = 29.607610907796627 
+            text = "xxx" 
+        intervals [6]:
+            xmin = 29.607610907796627 
+            xmax = 30.300000000000004 
+            text = "polo" 
+        intervals [7]:
+            xmin = 30.300000000000004 
+            xmax = 31.606520949503988 
+            text = "xxx" 
+        intervals [8]:
+            xmin = 31.606520949503988 
+            xmax = 32.811950206711515 
+            text = "bala" 
+        intervals [9]:
+            xmin = 32.811950206711515 
+            xmax = 34.47763427121645 
+            text = "xxx" 
+        intervals [10]:
+            xmin = 34.47763427121645 
+            xmax = 35.420060781396884 
+            text = "oka" 
+        intervals [11]:
+            xmin = 35.420060781396884 
+            xmax = 36.97616036797387 
+            text = "xxx" 
+        intervals [12]:
+            xmin = 36.97616036797387 
+            xmax = 38.1596727295958 
+            text = "gota" 
+        intervals [13]:
+            xmin = 38.1596727295958 
+            xmax = 40.044525749956655 
+            text = "xxx" 
+        intervals [14]:
+            xmin = 40.044525749956655 
+            xmax = 41.05270294689386 
+            text = "tuku" 
+        intervals [15]:
+            xmin = 41.05270294689386 
+            xmax = 42.806054593741166 
+            text = "xxx" 
+        intervals [16]:
+            xmin = 42.806054593741166 
+            xmax = 43.92381626860632 
+            text = "gaka" 
+        intervals [17]:
+            xmin = 43.92381626860632 
+            xmax = 45.63333412428245 
+            text = "xxx" 
+        intervals [18]:
+            xmin = 45.63333412428245 
+            xmax = 46.619594425634055 
+            text = "gato" 
+        intervals [19]:
+            xmin = 46.619594425634055 
+            xmax = 48.64 
+            text = "xxx" 
+        intervals [20]:
+            xmin = 48.64 
+            xmax = 49.758183037792165 
+            text = "buku" 
+        intervals [21]:
+            xmin = 49.758183037792165 
+            xmax = 51.42386710229711 
+            text = "xxx" 
+        intervals [22]:
+            xmin = 51.42386710229711 
+            xmax = 52.497794985991085 
+            text = "geke" 
+        intervals [23]:
+            xmin = 52.497794985991085 
+            xmax = 53.856642512297746 
+            text = "xxx" 
+        intervals [24]:
+            xmin = 53.856642512297746 
+            xmax = 55.19357314301882 
+            text = "teke" 
+        intervals [25]:
+            xmin = 55.19357314301882 
+            xmax = 56.55242066932548 
+            text = "xxx" 
+        intervals [26]:
+            xmin = 56.55242066932548 
+            xmax = 57.5167640750915 
+            text = "giki" 
+        intervals [27]:
+            xmin = 57.5167640750915 
+            xmax = 59.072863661668485 
+            text = "xxx" 
+        intervals [28]:
+            xmin = 59.072863661668485 
+            xmax = 60.10295775419128 
+            text = "dodo" 
+        intervals [29]:
+            xmin = 60.10295775419128 
+            xmax = 61.74672492311063 
+            text = "xxx" 
+        intervals [30]:
+            xmin = 61.74672492311063 
+            xmax = 62.68915143329105 
+            text = "kuku" 
+        intervals [31]:
+            xmin = 62.68915143329105 
+            xmax = 64.42058618455277 
+            text = "xxx" 
+        intervals [32]:
+            xmin = 64.42058618455277 
+            xmax = 65.47259717266115 
+            text = "koko" 
+        intervals [33]:
+            xmin = 65.47259717266115 
+            xmax = 67.23 
+            text = "xxx" 
+        intervals [34]:
+            xmin = 67.23 
+            xmax = 68.17284787310743 
+            text = "ita" 
+        intervals [35]:
+            xmin = 68.17284787310743 
+            xmax = 69.86044883319796 
+            text = "xxx" 
+        intervals [36]:
+            xmin = 69.86044883319796 
+            xmax = 71.00012740364872 
+            text = "duku" 
+        intervals [37]:
+            xmin = 71.00012740364872 
+            xmax = 72.73156215491043 
+            text = "xxx" 
+        intervals [38]:
+            xmin = 72.73156215491043 
+            xmax = 73.78357314301881 
+            text = "doko" 
+        intervals [39]:
+            xmin = 73.78357314301881 
+            xmax = 75.0766699825687 
+            text = "xxx" 
+        intervals [40]:
+            xmin = 75.0766699825687 
+            xmax = 76.1067640750915 
+            text = "apa" 
+        intervals [41]:
+            xmin = 76.1067640750915 
+            xmax = 77.57519607932612 
+            text = "xxx" 
+        intervals [42]:
+            xmin = 77.57519607932612 
+            xmax = 78.6491239630201 
+            text = "tiki" 
+        intervals [43]:
+            xmin = 78.6491239630201 
+            xmax = 80.29289113193944 
+            text = "xxx" 
+        intervals [44]:
+            xmin = 80.29289113193944 
+            xmax = 81.34490212004783 
+            text = "epa" 
+        intervals [45]:
+            xmin = 81.34490212004783 
+            xmax = 83.09825376689514 
+            text = "xxx" 
+        intervals [46]:
+            xmin = 83.09825376689514 
+            xmax = 84.17218165058911 
+            text = "coco" 
+        intervals [47]:
+            xmin = 84.17218165058911 
+            xmax = 86.02 
+            text = "xxx" 
+        intervals [48]:
+            xmin = 86.02 
+            xmax = 87.11351820247691 
+            text = "caca" 
+        intervals [49]:
+            xmin = 87.11351820247691 
+            xmax = 88.82303605815304 
+            text = "xxx" 
+        intervals [50]:
+            xmin = 88.82303605815304 
+            xmax = 89.98463152418937 
+            text = "taka" 
+        intervals [51]:
+            xmin = 89.98463152418937 
+            xmax = 91.78181696220787 
+            text = "xxx" 
+        intervals [52]:
+            xmin = 91.78181696220787 
+            xmax = 92.76807726355948 
+            text = "goko" 
+        intervals [53]:
+            xmin = 92.76807726355948 
+            xmax = 94.14884168545173 
+            text = "xxx" 
+        intervals [54]:
+            xmin = 94.14884168545173 
+            xmax = 95.33235404707366 
+            text = "kiki" 
+        intervals [55]:
+            xmin = 95.33235404707366 
+            xmax = 96.82270294689387 
+            text = "xxx" 
+        intervals [56]:
+            xmin = 96.82270294689387 
+            xmax = 97.81512945707429 
+            text = "ada" 
+        intervals [57]:
+            xmin = 97.81512945707429 
+            xmax = 99.5184811039216 
+            text = "xxx" 
+        intervals [58]:
+            xmin = 99.5184811039216 
+            xmax = 100.46090761410203 
+            text = "eda" 
+        intervals [59]:
+            xmin = 100.46090761410203 
+            xmax = 102.10467478302138 
+            text = "xxx" 
+        intervals [60]:
+            xmin = 102.10467478302138 
+            xmax = 103.0690181887874 
+            text = "deke" 
+        intervals [61]:
+            xmin = 103.0690181887874 
+            xmax = 104.6953410055397 
+            text = "xxx" 
+        intervals [62]:
+            xmin = 104.6953410055397 
+            xmax = 105.7473519936481 
+            text = "biki" 
+        intervals [63]:
+            xmin = 105.7473519936481 
+            xmax = 107.39111916256745 
+            text = "xxx" 
+        intervals [64]:
+            xmin = 107.39111916256745 
+            xmax = 108.18012740364873 
+            text = "palo" 
+        intervals [65]:
+            xmin = 108.18012740364873 
+            xmax = 109.71431009464013 
+            text = "xxx" 
+        intervals [66]:
+            xmin = 109.71431009464013 
+            xmax = 110.59098591806378 
+            text = "piki" 
+        intervals [67]:
+            xmin = 110.59098591806378 
+            xmax = 112.10325171346958 
+            text = "xxx" 
+        intervals [68]:
+            xmin = 112.10325171346958 
+            xmax = 113.11142891040679 
+            text = "boko" 
+        intervals [69]:
+            xmin = 113.11142891040679 
+            xmax = 114.75519607932613 
+            text = "xxx" 
+        intervals [70]:
+            xmin = 114.75519607932613 
+            xmax = 115.5880381115786 
+            text = "peke" 
+        intervals [71]:
+            xmin = 115.5880381115786 
+            xmax = 117.3633066540115 
+            text = "xxx" 
+        intervals [72]:
+            xmin = 117.3633066540115 
+            xmax = 118.32765005977753 
+            text = "keke" 
+        intervals [73]:
+            xmin = 118.32765005977753 
+            xmax = 119.94950033311127 
+            text = "xxx" 
+        intervals [74]:
+            xmin = 119.94950033311127 
+            xmax = 120.97959442563408 
+            text = "kaka" 
+        intervals [75]:
+            xmin = 120.97959442563408 
+            xmax = 122.75000000000003 
+            text = "xxx" 
+        intervals [76]:
+            xmin = 122.75000000000003 
+            xmax = 123.5702606481524 
+            text = "paka" 
+        intervals [77]:
+            xmin = 123.5702606481524 
+            xmax = 125.23594471265734 
+            text = "xxx" 
+        intervals [78]:
+            xmin = 125.23594471265734 
+            xmax = 126.15645432725218 
+            text = "bola" 
+        intervals [79]:
+            xmin = 126.15645432725218 
+            xmax = 127.69063701824356 
+            text = "xxx" 
+        intervals [80]:
+            xmin = 127.69063701824356 
+            xmax = 128.74264800635194 
+            text = "dado" 
+        intervals [81]:
+            xmin = 128.74264800635194 
+            xmax = 130.079578637073 
+            text = "xxx" 
+        intervals [82]:
+            xmin = 130.079578637073 
+            xmax = 131.13158962518142 
+            text = "taco" 
+        intervals [83]:
+            xmin = 131.13158962518142 
+            xmax = 132.49043715148807 
+            text = "xxx" 
+        intervals [84]:
+            xmin = 132.49043715148807 
+            xmax = 133.54244813959644 
+            text = "oba" 
+        intervals [85]:
+            xmin = 133.54244813959644 
+            xmax = 134.9670463526599 
+            text = "xxx" 
+        intervals [86]:
+            xmin = 134.9670463526599 
+            xmax = 136.01905734076828 
+            text = "baka" 
+        intervals [87]:
+            xmin = 136.01905734076828 
+            xmax = 137.68474140527323 
+            text = "xxx" 
+        intervals [88]:
+            xmin = 137.68474140527323 
+            xmax = 138.58333412428246 
+            text = "topo" 
+        intervals [89]:
+            xmin = 138.58333412428246 
+            xmax = 140.20518439761622 
+            text = "xxx" 
+        intervals [90]:
+            xmin = 140.20518439761622 
+            xmax = 141.2791122813102 
+            text = "toko" 
+        intervals [91]:
+            xmin = 141.2791122813102 
+            xmax = 142.59859855986423 
+            text = "xxx" 
+        intervals [92]:
+            xmin = 142.59859855986423 
+            xmax = 143.56294196563024 
+            text = "poko" 
+        intervals [93]:
+            xmin = 143.56294196563024 
+            xmax = 145.07520776103604 
+            text = "xxx" 
+        intervals [94]:
+            xmin = 145.07520776103604 
+            xmax = 146.10530185355884 
+            text = "uta" 
+        intervals [95]:
+            xmin = 146.10530185355884 
+            xmax = 147.39839869310873 
+            text = "xxx" 
+        intervals [96]:
+            xmin = 147.39839869310873 
+            xmax = 148.29699141211796 
+            text = "puku" 
+        intervals [97]:
+            xmin = 148.29699141211796 
+            xmax = 150.05034305896527 
+            text = "xxx" 
+        intervals [98]:
+            xmin = 150.05034305896527 
+            xmax = 151.10235404707367 
+            text = "beke" 
+        intervals [99]:
+            xmin = 151.10235404707367 
+            xmax = 152.63653673806505 
+            text = "xxx" 
+        intervals [100]:
+            xmin = 152.63653673806505 
+            xmax = 153.68854772617345 
+            text = "diki" 
+        intervals [101]:
+            xmin = 153.68854772617345 
+            xmax = 155.41998247743516 
+            text = "xxx" 
+        intervals [102]:
+            xmin = 155.41998247743516 
+            xmax = 156.3185751964444 
+            text = "oba" 
+        intervals [103]:
+            xmin = 156.3185751964444 
+            xmax = 157.8308409918502 
+            text = "xxx" 
+        intervals [104]:
+            xmin = 157.8308409918502 
+            xmax = 159.08010404022892 
+            text = "gaka" 
+        intervals [105]:
+            xmin = 159.08010404022892 
+            xmax = 160.7064268569812 
+            text = "xxx" 
+        intervals [106]:
+            xmin = 160.7064268569812 
+            xmax = 161.62693647157604 
+            text = "beke" 
+        intervals [107]:
+            xmin = 161.62693647157604 
+            xmax = 163.44603880518014 
+            text = "xxx" 
+        intervals [108]:
+            xmin = 163.44603880518014 
+            xmax = 164.49804979328852 
+            text = "toko" 
+        intervals [109]:
+            xmin = 164.49804979328852 
+            xmax = 165.8568973195952 
+            text = "xxx" 
+        intervals [110]:
+            xmin = 165.8568973195952 
+            xmax = 166.66782245626206 
+            text = "apa" 
+        intervals [111]:
+            xmin = 166.66782245626206 
+            xmax = 168.07050377373992 
+            text = "xxx" 
+        intervals [112]:
+            xmin = 168.07050377373992 
+            xmax = 169.3636006132898 
+            text = "ada" 
+        intervals [113]:
+            xmin = 169.3636006132898 
+            xmax = 170.85394951311 
+            text = "xxx" 
+        intervals [114]:
+            xmin = 170.85394951311 
+            xmax = 171.92787739680398 
+            text = "geke" 
+        intervals [115]:
+            xmin = 171.92787739680398 
+            xmax = 173.46206008779538 
+            text = "xxx" 
+        intervals [116]:
+            xmin = 173.46206008779538 
+            xmax = 174.62365555383172 
+            text = "kuku" 
+        intervals [117]:
+            xmin = 174.62365555383172 
+            xmax = 175.98250308013837 
+            text = "xxx" 
+        intervals [118]:
+            xmin = 175.98250308013837 
+            xmax = 177.07834785941796 
+            text = "biki" 
+        intervals [119]:
+            xmin = 177.07834785941796 
+            xmax = 178.77000000000004 
+            text = "xxx" 
+        intervals [120]:
+            xmin = 178.77000000000004 
+            xmax = 179.73476476869303 
+            text = "dodo" 
+        intervals [121]:
+            xmin = 179.73476476869303 
+            xmax = 181.15936298175646 
+            text = "xxx" 
+        intervals [122]:
+            xmin = 181.15936298175646 
+            xmax = 182.12370638752247 
+            text = "caca" 
+        intervals [123]:
+            xmin = 182.12370638752247 
+            xmax = 185.27973935184764 
+            text = "xxx" 
+        intervals [124]:
+            xmin = 185.27973935184764 
+            xmax = 186.44133481788398 
+            text = "gota" 
+        intervals [125]:
+            xmin = 186.44133481788398 
+            xmax = 187.6686809706771 
+            text = "xxx" 
+        intervals [126]:
+            xmin = 187.6686809706771 
+            xmax = 188.5357723161728 
+            text = "kiki" 
+        intervals [127]:
+            xmin = 188.5357723161728 
+            xmax = 189.86037052923623 
+            text = "xxx" 
+        intervals [128]:
+            xmin = 189.86037052923623 
+            xmax = 190.7370463526599 
+            text = "poko" 
+        intervals [129]:
+            xmin = 190.7370463526599 
+            xmax = 192.446564208336 
+            text = "xxx" 
+        intervals [130]:
+            xmin = 192.446564208336 
+            xmax = 193.36707382293085 
+            text = "teke" 
+        intervals [131]:
+            xmin = 193.36707382293085 
+            xmax = 194.79167203599428 
+            text = "xxx" 
+        intervals [132]:
+            xmin = 194.79167203599428 
+            xmax = 196.01901818878738 
+            text = "oka" 
+        intervals [133]:
+            xmin = 196.01901818878738 
+            xmax = 197.46000000000006 
+            text = "xxx" 
+        intervals [134]:
+            xmin = 197.46000000000006 
+            xmax = 198.36859855986424 
+            text = "deke" 
+        intervals [135]:
+            xmin = 198.36859855986424 
+            xmax = 199.79319677292767 
+            text = "xxx" 
+        intervals [136]:
+            xmin = 199.79319677292767 
+            xmax = 200.95479223896402 
+            text = "bala" 
+        intervals [137]:
+            xmin = 200.95479223896402 
+            xmax = 202.33555666085627 
+            text = "xxx" 
+        intervals [138]:
+            xmin = 202.33555666085627 
+            xmax = 203.51906902247822 
+            text = "taco" 
+        intervals [139]:
+            xmin = 203.51906902247822 
+            xmax = 204.76833207085693 
+            text = "xxx" 
+        intervals [140]:
+            xmin = 204.76833207085693 
+            xmax = 205.88609374572206 
+            text = "guku" 
+        intervals [141]:
+            xmin = 205.88609374572206 
+            xmax = 207.28877506319992 
+            text = "xxx" 
+        intervals [142]:
+            xmin = 207.28877506319992 
+            xmax = 208.45037052923627 
+            text = "kaka" 
+        intervals [143]:
+            xmin = 208.45037052923627 
+            xmax = 209.8968856378853 
+            text = "xxx" 
+        intervals [144]:
+            xmin = 209.8968856378853 
+            xmax = 210.75164456572335 
+            text = "eda" 
+        intervals [145]:
+            xmin = 210.75164456572335 
+            xmax = 212.32966104788593 
+            text = "xxx" 
+        intervals [146]:
+            xmin = 212.32966104788593 
+            xmax = 213.09675239338162 
+            text = "peke" 
+        intervals [147]:
+            xmin = 213.09675239338162 
+            xmax = 214.82818714464335 
+            text = "xxx" 
+        intervals [148]:
+            xmin = 214.82818714464335 
+            xmax = 215.77061365482376 
+            text = "coco" 
+        intervals [149]:
+            xmin = 215.77061365482376 
+            xmax = 217.17776751572015 
+            text = "xxx" 
+        intervals [150]:
+            xmin = 217.17776751572015 
+            xmax = 218.25169539941413 
+            text = "paka" 
+        intervals [151]:
+            xmin = 218.25169539941413 
+            xmax = 219.6105429257208 
+            text = "xxx" 
+        intervals [152]:
+            xmin = 219.6105429257208 
+            xmax = 220.5433849579733 
+            text = "dado" 
+        intervals [153]:
+            xmin = 220.5433849579733 
+            xmax = 222.06523523130704 
+            text = "xxx" 
+        intervals [154]:
+            xmin = 222.06523523130704 
+            xmax = 223.02957863707306 
+            text = "taka" 
+        intervals [155]:
+            xmin = 223.02957863707306 
+            xmax = 224.47609374572207 
+            text = "xxx" 
+        intervals [156]:
+            xmin = 224.47609374572207 
+            xmax = 225.33085267356014 
+            text = "buku" 
+        intervals [157]:
+            xmin = 225.33085267356014 
+            xmax = 226.9527029468939 
+            text = "xxx" 
+        intervals [158]:
+            xmin = 226.9527029468939 
+            xmax = 227.82937877031756 
+            text = "bola" 
+        intervals [159]:
+            xmin = 227.82937877031756 
+            xmax = 229.39506283482248 
+            text = "xxx" 
+        intervals [160]:
+            xmin = 229.39506283482248 
+            xmax = 230.2621541803182 
+            text = "uta" 
+        intervals [161]:
+            xmin = 230.2621541803182 
+            xmax = 231.62100170662487 
+            text = "xxx" 
+        intervals [162]:
+            xmin = 231.62100170662487 
+            xmax = 232.47576063446292 
+            text = "puku" 
+        intervals [163]:
+            xmin = 232.47576063446292 
+            xmax = 233.85652505635517 
+            text = "xxx" 
+        intervals [164]:
+            xmin = 233.85652505635517 
+            xmax = 234.7400000000001 
+            text = "diki" 
+        intervals [165]:
+            xmin = 234.7400000000001 
+            xmax = 236.31568990535996 
+            text = "xxx" 
+        intervals [166]:
+            xmin = 236.31568990535996 
+            xmax = 237.32386710229716 
+            text = "tuku" 
+        intervals [167]:
+            xmin = 237.32386710229716 
+            xmax = 238.83613289770295 
+            text = "xxx" 
+        intervals [168]:
+            xmin = 238.83613289770295 
+            xmax = 239.73472561671218 
+            text = "baka" 
+        intervals [169]:
+            xmin = 239.73472561671218 
+            xmax = 241.246991412118 
+            text = "xxx" 
+        intervals [170]:
+            xmin = 241.246991412118 
+            xmax = 242.18941792229842 
+            text = "koko" 
+        intervals [171]:
+            xmin = 242.18941792229842 
+            xmax = 243.61401613536185 
+            text = "xxx" 
+        intervals [172]:
+            xmin = 243.61401613536185 
+            xmax = 244.60027643671347 
+            text = "polo" 
+        intervals [173]:
+            xmin = 244.60027643671347 
+            xmax = 246.13445912770487 
+            text = "xxx" 
+        intervals [174]:
+            xmin = 246.13445912770487 
+            xmax = 247.12071942905646 
+            text = "epa" 
+        intervals [175]:
+            xmin = 247.12071942905646 
+            xmax = 248.45765005977756 
+            text = "xxx" 
+        intervals [176]:
+            xmin = 248.45765005977756 
+            xmax = 249.50966104788594 
+            text = "goko" 
+        intervals [177]:
+            xmin = 249.50966104788594 
+            xmax = 250.91234236536377 
+            text = "xxx" 
+        intervals [178]:
+            xmin = 250.91234236536377 
+            xmax = 251.8328519799586 
+            text = "keke" 
+        intervals [179]:
+            xmin = 251.8328519799586 
+            xmax = 253.41534100553974 
+            text = "xxx" 
+        intervals [180]:
+            xmin = 253.41534100553974 
+            xmax = 254.2262661422066 
+            text = "giki" 
+        intervals [181]:
+            xmin = 254.2262661422066 
+            xmax = 255.75428262436918 
+            text = "xxx" 
+        intervals [182]:
+            xmin = 255.75428262436918 
+            xmax = 256.65904155220727 
+            text = "tiki" 
+        intervals [183]:
+            xmin = 256.65904155220727 
+            xmax = 258.0617228696851 
+            text = "xxx" 
+        intervals [184]:
+            xmin = 258.0617228696851 
+            xmax = 258.93839869310875 
+            text = "topo" 
+        intervals [185]:
+            xmin = 258.93839869310875 
+            xmax = 260.3410800105866 
+            text = "xxx" 
+        intervals [186]:
+            xmin = 260.3410800105866 
+            xmax = 261.54650926779414 
+            text = "daka" 
+        intervals [187]:
+            xmin = 261.54650926779414 
+            xmax = 262.8834398985152 
+            text = "xxx" 
+        intervals [188]:
+            xmin = 262.8834398985152 
+            xmax = 263.8477833042812 
+            text = "palo" 
+        intervals [189]:
+            xmin = 263.8477833042812 
+            xmax = 265.5792180555429 
+            text = "xxx" 
+        intervals [190]:
+            xmin = 265.5792180555429 
+            xmax = 266.47781077455215 
+            text = "boko" 
+        intervals [191]:
+            xmin = 266.47781077455215 
+            xmax = 268.1654117346427 
+            text = "xxx" 
+        intervals [192]:
+            xmin = 268.1654117346427 
+            xmax = 269.0420875580664 
+            text = "doko" 
+        intervals [193]:
+            xmin = 269.0420875580664 
+            xmax = 270.59818714464336 
+            text = "xxx" 
+        intervals [194]:
+            xmin = 270.59818714464336 
+            xmax = 271.43102917689583 
+            text = "piki" 
+        intervals [195]:
+            xmin = 271.43102917689583 
+            xmax = 272.99160130689137 
+            text = "xxx" 
+        intervals [196]:
+            xmin = 272.99160130689137 
+            xmax = 273.6929419656303 
+            text = "duku" 
+        intervals [197]:
+            xmin = 273.6929419656303 
+            xmax = 275.2490415522073 
+            text = "xxx" 
+        intervals [198]:
+            xmin = 275.2490415522073 
+            xmax = 276.19146806238774 
+            text = "gato" 
+        intervals [199]:
+            xmin = 276.19146806238774 
+            xmax = 277.462648006352 
+            text = "xxx" 
+        intervals [200]:
+            xmin = 277.462648006352 
+            xmax = 278.426991412118 
+            text = "ita" 
+        intervals [201]:
+            xmin = 278.426991412118 
+            xmax = 279.7858389384247 
+            text = "xxx" 
+        intervals [202]:
+            xmin = 279.7858389384247 
+            xmax = 280.6405978662628 
+            text = "kaka" 
+        intervals [203]:
+            xmin = 280.6405978662628 
+            xmax = 282.0432791837406 
+            text = "xxx" 
+        intervals [204]:
+            xmin = 282.0432791837406 
+            xmax = 283.00762258950664 
+            text = "keke" 
+        intervals [205]:
+            xmin = 283.00762258950664 
+            xmax = 284.5198883849124 
+            text = "xxx" 
+        intervals [206]:
+            xmin = 284.5198883849124 
+            xmax = 285.4903979995073 
+            text = "caca" 
+        intervals [207]:
+            xmin = 285.4903979995073 
+            xmax = 287.0403313772554 
+            text = "xxx" 
+        intervals [208]:
+            xmin = 287.0403313772554 
+            xmax = 288.0265916786071 
+            text = "tiki" 
+        intervals [209]:
+            xmin = 288.0265916786071 
+            xmax = 289.6046081607696 
+            text = "xxx" 
+        intervals [210]:
+            xmin = 289.6046081607696 
+            xmax = 290.5600000000002 
+            text = "daka" 
+        intervals [211]:
+            xmin = 290.5600000000002 
+            xmax = 292.0418561141889 
+            text = "xxx" 
+        intervals [212]:
+            xmin = 292.0418561141889 
+            xmax = 293.26920226698195 
+            text = "polo" 
+        intervals [213]:
+            xmin = 293.26920226698195 
+            xmax = 294.6938004800454 
+            text = "xxx" 
+        intervals [214]:
+            xmin = 294.6938004800454 
+            xmax = 295.74581146815376 
+            text = "puku" 
+        intervals [215]:
+            xmin = 295.74581146815376 
+            xmax = 297.2799941591452 
+            text = "xxx" 
+        intervals [216]:
+            xmin = 297.2799941591452 
+            xmax = 298.39775583401035 
+            text = "toko" 
+        intervals [217]:
+            xmin = 298.39775583401035 
+            xmax = 299.8881047338306 
+            text = "xxx" 
+        intervals [218]:
+            xmin = 299.8881047338306 
+            xmax = 300.8086143484254 
+            text = "apa" 
+        intervals [219]:
+            xmin = 300.8086143484254 
+            xmax = 302.2551294570744 
+            text = "xxx" 
+        intervals [220]:
+            xmin = 302.2551294570744 
+            xmax = 303.350974236354 
+            text = "piki" 
+        intervals [221]:
+            xmin = 303.350974236354 
+            xmax = 304.66598797148947 
+            text = "xxx" 
+        intervals [222]:
+            xmin = 304.66598797148947 
+            xmax = 305.7399158551834 
+            text = "baka" 
+        intervals [223]:
+            xmin = 305.7399158551834 
+            xmax = 307.0330126947333 
+            text = "xxx" 
+        intervals [224]:
+            xmin = 307.0330126947333 
+            xmax = 308.1946081607697 
+            text = "ita" 
+        intervals [225]:
+            xmin = 308.1946081607697 
+            xmax = 309.93051545544995 
+            text = "xxx" 
+        intervals [226]:
+            xmin = 309.93051545544995 
+            xmax = 310.89485886121594 
+            text = "taka" 
+        intervals [227]:
+            xmin = 310.89485886121594 
+            xmax = 312.4728753433785 
+            text = "xxx" 
+        intervals [228]:
+            xmin = 312.4728753433785 
+            xmax = 313.5687201226581 
+            text = "deke" 
+        intervals [229]:
+            xmin = 313.5687201226581 
+            xmax = 315.3659055606766 
+            text = "xxx" 
+        intervals [230]:
+            xmin = 315.3659055606766 
+            xmax = 316.30833207085703 
+            text = "gota" 
+        intervals [231]:
+            xmin = 316.30833207085703 
+            xmax = 317.93018234419077 
+            text = "xxx" 
+        intervals [232]:
+            xmin = 317.93018234419077 
+            xmax = 318.8287750632 
+            text = "ada" 
+        intervals [233]:
+            xmin = 318.8287750632 
+            xmax = 320.25337327626346 
+            text = "xxx" 
+        intervals [234]:
+            xmin = 320.25337327626346 
+            xmax = 321.21771668202945 
+            text = "boko" 
+        intervals [235]:
+            xmin = 321.21771668202945 
+            xmax = 322.55464731275055 
+            text = "xxx" 
+        intervals [236]:
+            xmin = 322.55464731275055 
+            xmax = 323.4532400317598 
+            text = "peke" 
+        intervals [237]:
+            xmin = 323.4532400317598 
+            xmax = 324.7901706624809 
+            text = "xxx" 
+        intervals [238]:
+            xmin = 324.7901706624809 
+            xmax = 325.86409854617483 
+            text = "kuku" 
+        intervals [239]:
+            xmin = 325.86409854617483 
+            xmax = 327.4900000000002 
+            text = "xxx" 
+        intervals [240]:
+            xmin = 327.4900000000002 
+            xmax = 328.23559581283735 
+            text = "taco" 
+        intervals [241]:
+            xmin = 328.23559581283735 
+            xmax = 329.7697785038287 
+            text = "xxx" 
+        intervals [242]:
+            xmin = 329.7697785038287 
+            xmax = 330.7998725963515 
+            text = "epa" 
+        intervals [243]:
+            xmin = 330.7998725963515 
+            xmax = 332.24638770500053 
+            text = "xxx" 
+        intervals [244]:
+            xmin = 332.24638770500053 
+            xmax = 333.2545649019377 
+            text = "dado" 
+        intervals [245]:
+            xmin = 333.2545649019377 
+            xmax = 334.76683069734355 
+            text = "xxx" 
+        intervals [246]:
+            xmin = 334.76683069734355 
+            xmax = 335.6935065207672 
+            text = "dodo" 
+        intervals [247]:
+            xmin = 335.6935065207672 
+            xmax = 337.19960610734415 
+            text = "xxx" 
+        intervals [248]:
+            xmin = 337.19960610734415 
+            xmax = 338.2077833042814 
+            text = "topo" 
+        intervals [249]:
+            xmin = 338.2077833042814 
+            xmax = 339.6323815173448 
+            text = "xxx" 
+        intervals [250]:
+            xmin = 339.6323815173448 
+            xmax = 340.75014319221 
+            text = "coco" 
+        intervals [251]:
+            xmin = 340.75014319221 
+            xmax = 341.9117386582463 
+            text = "xxx" 
+        intervals [252]:
+            xmin = 341.9117386582463 
+            xmax = 343.02950033311146 
+            text = "eda" 
+        intervals [253]:
+            xmin = 343.02950033311146 
+            xmax = 344.4760154417605 
+            text = "xxx" 
+        intervals [254]:
+            xmin = 344.4760154417605 
+            xmax = 345.5499433254545 
+            text = "guku" 
+        intervals [255]:
+            xmin = 345.5499433254545 
+            xmax = 347.00093097752205 
+            text = "xxx" 
+        intervals [256]:
+            xmin = 347.00093097752205 
+            xmax = 347.8556899053601 
+            text = "duku" 
+        intervals [257]:
+            xmin = 347.8556899053601 
+            xmax = 349.32412190959474 
+            text = "xxx" 
+        intervals [258]:
+            xmin = 349.32412190959474 
+            xmax = 350.22271462860397 
+            text = "goko" 
+        intervals [259]:
+            xmin = 350.22271462860397 
+            xmax = 351.4062269902259 
+            text = "xxx" 
+        intervals [260]:
+            xmin = 351.4062269902259 
+            xmax = 352.80890830770375 
+            text = "kiki" 
+        intervals [261]:
+            xmin = 352.80890830770375 
+            xmax = 353.9705037737401 
+            text = "xxx" 
+        intervals [262]:
+            xmin = 353.9705037737401 
+            xmax = 355.15401613536204 
+            text = "koko" 
+        intervals [263]:
+            xmin = 355.15401613536204 
+            xmax = 356.44711297491193 
+            text = "xxx" 
+        intervals [264]:
+            xmin = 356.44711297491193 
+            xmax = 357.8059605012186 
+            text = "oba" 
+        intervals [265]:
+            xmin = 357.8059605012186 
+            xmax = 359.1428911319396 
+            text = "xxx" 
+        intervals [266]:
+            xmin = 359.1428911319396 
+            xmax = 360.2387359112192 
+            text = "geke" 
+        intervals [267]:
+            xmin = 360.2387359112192 
+            xmax = 361.4441651684267 
+            text = "xxx" 
+        intervals [268]:
+            xmin = 361.4441651684267 
+            xmax = 362.36467478302154 
+            text = "teke" 
+        intervals [269]:
+            xmin = 362.36467478302154 
+            xmax = 363.9426912651841 
+            text = "xxx" 
+        intervals [270]:
+            xmin = 363.9426912651841 
+            xmax = 364.8200000000003 
+            text = "paka" 
+        intervals [271]:
+            xmin = 364.8200000000003 
+            xmax = 366.13885336716186 
+            text = "xxx" 
+        intervals [272]:
+            xmin = 366.13885336716186 
+            xmax = 367.5196177890541 
+            text = "beke" 
+        intervals [273]:
+            xmin = 367.5196177890541 
+            xmax = 369.00996668887433 
+            text = "xxx" 
+        intervals [274]:
+            xmin = 369.00996668887433 
+            xmax = 369.93047630346916 
+            text = "oka" 
+        intervals [275]:
+            xmin = 369.93047630346916 
+            xmax = 371.1797393518479 
+            text = "xxx" 
+        intervals [276]:
+            xmin = 371.1797393518479 
+            xmax = 372.3413348178842 
+            text = "buku" 
+        intervals [277]:
+            xmin = 372.3413348178842 
+            xmax = 373.52484717950614 
+            text = "xxx" 
+        intervals [278]:
+            xmin = 373.52484717950614 
+            xmax = 374.6206919587857 
+            text = "bala" 
+        intervals [279]:
+            xmin = 374.6206919587857 
+            xmax = 376.04529017184916 
+            text = "xxx" 
+        intervals [280]:
+            xmin = 376.04529017184916 
+            xmax = 376.87813220410163 
+            text = "poko" 
+        intervals [281]:
+            xmin = 376.87813220410163 
+            xmax = 378.34656420833625 
+            text = "xxx" 
+        intervals [282]:
+            xmin = 378.34656420833625 
+            xmax = 379.2451569273455 
+            text = "biki" 
+        intervals [283]:
+            xmin = 379.2451569273455 
+            xmax = 380.6040044536522 
+            text = "xxx" 
+        intervals [284]:
+            xmin = 380.6040044536522 
+            xmax = 381.74984923293175 
+            text = "gaka" 
+        intervals [285]:
+            xmin = 381.74984923293175 
+            xmax = 383.2600000000003 
+            text = "xxx" 
+        intervals [286]:
+            xmin = 383.2600000000003 
+            xmax = 384.26859855986453 
+            text = "bola" 
+        intervals [287]:
+            xmin = 384.26859855986453 
+            xmax = 385.5397785038288 
+            text = "xxx" 
+        intervals [288]:
+            xmin = 385.5397785038288 
+            xmax = 386.7232908654508 
+            text = "uta" 
+        intervals [289]:
+            xmin = 386.7232908654508 
+            xmax = 388.03830460058623 
+            text = "xxx" 
+        intervals [290]:
+            xmin = 388.03830460058623 
+            xmax = 389.06839869310903 
+            text = "tuku" 
+        intervals [291]:
+            xmin = 389.06839869310903 
+            xmax = 390.4491631150013 
+            text = "xxx" 
+        intervals [292]:
+            xmin = 390.4491631150013 
+            xmax = 391.4573403119385 
+            text = "palo" 
+        intervals [293]:
+            xmin = 391.4573403119385 
+            xmax = 393.01343989851546 
+            text = "xxx" 
+        intervals [294]:
+            xmin = 393.01343989851546 
+            xmax = 393.9997001998671 
+            text = "doko" 
+        intervals [295]:
+            xmin = 393.9997001998671 
+            xmax = 395.09554497914667 
+            text = "xxx" 
+        intervals [296]:
+            xmin = 395.09554497914667 
+            xmax = 396.23522354959744 
+            text = "giki" 
+        intervals [297]:
+            xmin = 396.23522354959744 
+            xmax = 397.5721541803185 
+            text = "xxx" 
+        intervals [298]:
+            xmin = 397.5721541803185 
+            xmax = 398.5364975860845 
+            text = "diki" 
+        intervals [299]:
+            xmin = 398.5364975860845 
+            xmax = 400.3117661285174 
+            text = "xxx" 
+        intervals [300]:
+            xmin = 400.3117661285174 
+            xmax = 401.298026429869 
+            text = "gato" 
+        intervals [301]:
+            xmin = 401.298026429869 
+            xmax = 408.4886848072562 
+            text = "xxx" 

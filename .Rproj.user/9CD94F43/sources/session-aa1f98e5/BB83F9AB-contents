@@ -1,0 +1,3 @@
+install.packages('tuneR')
+library(tuneR)
+readWave("C:/Users/rober/Desktop/schwa_to_a/data/prodShadow/data/session0/bco_prodShadow0_2015_Jul_01_1012/wavs/bco_prodShadow0_ada.wav")
