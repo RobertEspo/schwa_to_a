@@ -1,8 +1,8 @@
 ---
-title: "README"
-author: "Robert Esposito"
-date: "2025-10-16"
-output: github_document
+title: "exploratory, move me somewhere else later"
+format: gfm
+date: last-modified
+date-format: iso
 ---
 
 just for easy access to graphs and stuff.
