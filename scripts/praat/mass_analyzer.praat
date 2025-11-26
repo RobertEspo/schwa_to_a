@@ -258,7 +258,7 @@ for file to numberOfFiles
             #Creates a Formant Object. With the formant object, we can gather formant values and formant bandwidths. Change '5500' to '5000' if your data has mostly male speakers (or use formant optimization later!).
             formantCeiling = 5500
             select Sound 'currentSound$'
-            currentFormant = To Formant (burg)... 0 5 formantCeiling 0.025 50
+            currentFormant = To Formant (burg)... 0 3 formantCeiling 0.025 50
         endif
     endif
 

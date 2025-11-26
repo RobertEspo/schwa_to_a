@@ -1,0 +1,766 @@
+---
+title: "Quarto Rutgers theme"
+subtitle: "Port of the ru_xaringan theme using quarto markdown"
+author: "Joseph V. Casillas"
+institute: "Rutgers University"
+date: "Last update: `r Sys.Date()`"
+format: rutgers-revealjs
+engine: knitr
+execute: 
+  out.width: "100%"
+  fig.asp: 0.5625
+  dpi: 300
+---
+
+# The basics {.transition}
+
+Check me out
+
+## Standard markdown stuff
+
+- Similar to `xaringan`, **revealjs** uses \# for headers
+- One difference is that they automatically generate a new slide
+  - Two (##) for a level two header at the top of a slide
+  - One (#) is centered vertically (good for a section divider)
+- All other basic markdown syntax works the same:
+
+### h3 level
+
+#### h4 level
+
+
+
+
+## Incremental slides
+
+To make an ordered or unordered list incremental you have to use css
+
+. . .
+
+</br>
+
+::: columns
+::: {.column width="50%"}
+```
+::: {.incremental}
+- First this one
+- Then this one
+:::
+```
+:::
+
+::: {.column width="50%"}
+::: incremental
+- First this one
+- Then this one
+:::
+:::
+:::
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+```
+::: {.incremental}
+1. First this one
+2. Then this one
+:::
+```
+:::
+
+::: {.column width="50%"}
+::: incremental
+1. First this one
+2. Then this one
+:::
+:::
+:::
+
+## Multiple columns
+
+You can make multiple columns of any width using css as well
+
+. . .
+
+```
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+```
+
+::: columns
+::: {.column width="50%"}
+Left column
+:::
+
+::: {.column width="50%"}
+Right column
+:::
+:::
+
+
+# Text stuff
+
+## Centering
+
+[this is centered]{.ch}
+
+[this is centered]{style="text-align:'center'"}
+
+
+
+
+
+# Some new stuff {.transition}
+
+## Long slides? {.smaller}
+
+You can use css to make text smaller with `{.smaller}`
+
+. . .
+
+```
+## Slide Title {.smaller}
+```
+
+. . .
+
+- this
+- is
+- ideal
+- for
+- really
+- long
+- slides
+- but
+- it's
+- usually
+- better to avoid that
+
+
+
+## Long slides? (again) {.scrollable}
+
+Another option is to make the individual slide scrollable using `{.scrollable}`
+
+. . .
+
+- this
+- is
+- ideal
+- for
+- really
+- long
+- slides
+- but
+- it's
+- usually
+- better
+- to
+- avoid
+- that
+
+
+
+## Don't forget your speaker notes
+
+You can get your speaker notes all set up using
+
+```
+::: {.notes}
+Speaker notes go here.
+:::
+```
+
+Click "s" to see some notes
+
+::: notes
+These are some notes.
+:::
+
+
+
+## Asides
+
+You can include asides, but they are kind of weird.
+
+```
+::: aside
+This is an aside
+:::
+```
+
+::: aside
+This is an aside
+:::
+
+
+
+## Footnotes
+
+I think footnotes are probably more useful [^1]
+
+[^1]: But maybe not always
+
+. . .
+
+You can make them endnotes (ew) like this:
+
+```
+---
+format:
+  revealjs:
+    reference-location: document
+---
+```
+
+
+
+## Custom footers
+
+You can add a custom footer to any slide using
+
+```
+::: footer
+This is my footer
+:::
+```
+
+::: footer
+This is my footer
+:::
+
+
+
+## Export to pdf
+
+You can use `pagedown::chrome_print("path-to-file.html")` to export the slides to pdf
+
+Another option is to type 'e'
+
+
+
+## iframes
+
+You can easily embed iframes (see next slide)
+
+```{r}
+#| echo: true
+#| eval: false
+## iframes {background-iframe="https://www.jvcasillas.com"}
+```
+
+- the website is embedded in the slide
+- it defaults to full screen
+- set `background-interactive` to true if you need to actually use the page
+
+## {background-iframe="https://www.jvcasillas.com" #iframe-ex-id data-menu-title="iframe example"}
+
+## More iframes
+
+They don't have to take up the whole screen (insert using `{=html}` chunk): 
+
+```{=html}
+<iframe width="100%" height="400" src="https://quarto.org/" title="Quarto Documentation"></iframe>
+```
+
+
+## preview links
+
+You can see the content of a link without opening a separate page by setting `preview-links: true`
+
+[An example](https://www.jvcasillas.com)
+
+[Another example](https://www.quarto.org)
+
+## Sizing things up
+
+```
+::: {.r-fit-text}
+Big Text
+:::
+```
+
+::: r-fit-text
+Big Text
+:::
+
+
+
+## Stretching imgs
+
+```
+![](image.png){.r-stretch}
+```
+
+![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.r-stretch}
+
+
+
+# Spans
+
+## All about spans
+
+- In `xaringan`, one can use `.[]` to apply some type of formatting to text, i.e., `.red[red text]`
+
+- In reveal, this works [in a similar way]{style="color: #cc0033;"}
+
+. . .
+
+`[in a similar way]{style="color: #cc0033;"}`
+
+. . .
+
+- The Rutgers theme as a class for emphasizing in [red]{.emph}  
+`[red]{.emph}`
+
+
+
+
+
+
+
+# Animations {.transition}
+
+## Animations explained
+
+```
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Animating content
+:::
+```
+
+## {auto-animate="true" #animation-ex1a-id data-menu-title="animation example"}
+
+::: {style="margin-top: 100px;"}
+Look at me
+:::
+
+## {auto-animate="true" #animation-ex1b-id data-menu-title="animation example"}
+
+::: {style="margin-top: 200px; font-size: 4em; color: #cc0033;"}
+Look at you
+:::
+
+## {auto-animate="true" #animation-ex1c-id data-menu-title="animation example"}
+
+::: {style="margin-top: 600px; margin-left: 400px; font-size: 2em; color: black;"}
+Look at this
+:::
+
+## {auto-animate="true" #animation-ex1d-id data-menu-title="animation example"}
+
+::: {style="margin-top: 100px; margin-left: 100px; font-size: 4em; color: #cc0033;"}
+Look at this
+:::
+
+## You can animate code chunks too
+
+````
+## {auto-animate="true"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+})
+```
+
+## {auto-animate=true}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+  barplot(WorldPhones[,input$region]*1000, 
+          main=input$region,
+          ylab="Number of Telephones",
+          xlab="Year")
+})
+```
+````
+
+## {auto-animate="true" #animation-ex2a-id data-menu-title="code animation example"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+})
+```
+
+## {auto-animate="true" #animation-ex2b-id data-menu-title="code animation example"}
+
+```r
+# Fill in the spot we created for a plot
+output$phonePlot <- renderPlot({
+  # Render a barplot
+  barplot(WorldPhones[,input$region]*1000, 
+          main=input$region,
+          ylab="Number of Telephones",
+          xlab="Year")
+})
+```
+
+## {auto-animate="true" #animation-ex3a-id data-menu-title="list animation example"}
+
+cool
+
+## {auto-animate="true" #animation-ex3b-id data-menu-title="list animation example"}
+
+is
+
+cool
+
+## {auto-animate="true" #animation-ex3c-id data-menu-title="list animation example"}
+
+animation
+
+is
+
+cool
+
+
+
+## {auto-animate="true" auto-animate-easing="ease-in-out" #animation-ex4a-id data-menu-title="hstack animation example"}
+
+::: r-hstack
+::: {data-id="box1" auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box2" auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;"}
+:::
+
+::: {data-id="box3" auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;"}
+:::
+:::
+
+## {auto-animate="true" auto-animate-easing="ease-in-out"  #animation-ex4b-id data-menu-title="hstack animation example"}
+
+::: r-stack
+::: {data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;"}
+:::
+
+::: {data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;"}
+:::
+
+::: {data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;"}
+:::
+:::
+
+
+
+
+
+# Fragments {.transition}
+
+## {#fragments-ex-id data-menu-title="change text with fragments"}
+
+::: fragment
+Fade in
+:::
+
+::: {.fragment .fade-out}
+Fade out
+:::
+
+::: {.fragment .highlight-red}
+Highlight red
+:::
+
+::: {.fragment .fade-in-then-out}
+Fade in, then out
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+
+
+
+
+# Diagrams
+
+## {#mermaid-ex1-id}
+
+```{mermaid}
+%%| label: fig-mermaid1
+%%| fig-width: 6
+%%| fig-cap: |
+%%|   How Quarto orchestrates rendering of documents: start with 
+%%|   a qmd file, use the Knitr or Jupyter engine to perform the 
+%%|   computations and convert it to an md file, then use Pandoc 
+%%|   to convert to various file formats including HTML, PDF, 
+%%|   and Word.
+flowchart LR
+  A[qmd] --> B(Knitr)
+  A[qmd] --> C(Jupyter)
+  B(Knitr) --> D[md]
+  C(Jupyter) --> D[md]
+  D[md] --> E(pandoc)
+  E(pandoc) --> F(HTML)
+  E(pandoc) --> G(PDF)
+  E(pandoc) --> H(Word)
+  E(pandoc) --> I{and more}
+```
+
+## {#mermaid-ex2-id}
+
+```{mermaid}
+%%| label: fig-mermaid2
+%%| fig-cap: |
+%%|   Something about RRs.
+flowchart LR
+  A[write] --> B(submit)
+  B(submit) --> C(Peer review)
+  C(Peer review) --> D(Revise)
+  C(Peer review) --> E(Accept)
+  C(Peer review) --> F{Reject}
+  D(Revise) --> B(submit)
+```
+
+##
+
+```{mermaid}
+%%| label: fig-mermaid3
+%%| fig-cap: |
+%%|   You can use this to show the timeline of a project.
+gantt
+  title A Gantt Diagram
+  dateFormat YYYY-MM-DD
+  section Collect data
+  In person data   :a1, 2023-01-01, 30d
+  Online data      :after a1, 20d
+  section Write paper
+  First draft      :2023-01-12, 12d
+  Revisions        :24d
+```
+
+
+
+## Dot diagrams
+
+```{dot}
+//| label: fig-dot
+//| fig-cap: |
+//|   How Quarto orchestrates rendering of documents.
+graph G {
+  layout=neato
+  qmd -- Knitr;
+  qmd -- Jupyter;
+  Knitr -- md;
+  Jupyter -- md;
+  md -- pandoc;
+  pandoc -- HTML;
+  pandoc -- PDF;
+  pandoc -- Word;
+  pandoc -- more;
+}
+```
+
+
+
+# Code stuff {.transition}
+
+## Standard slide with R code {.smaller}
+
+- You can highlight code using `code-line-numbers` in the knitr chunk options
+- If you include pipes, e.g., `code-line-numbers: "|5|"` they will be highlighted incrementally (nice!)
+- Using `output-location:` (fragment, slide, column, column-fragment) controls when and where the output of the code is displayed
+
+```{r}
+#| label: fig-code-ex
+#| fig.cap: Example caption.
+#| echo: true
+#| code-line-numbers: "|1|2|3|4|5|6|"
+#| output-location: slide
+
+library("tidyverse")
+ggplot(cars) + 
+  aes(x = dist, y = speed) + 
+  geom_point() + 
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 2)) + 
+  theme_bw(base_family = "Palatino", base_size = 20) + 
+  theme(
+    panel.grid.major = element_line(colour = 'grey90', size = 0.15),
+    panel.grid.minor = element_line(colour = 'grey90', size = 0.15)
+  )
+```
+
+
+
+## Tabsets
+
+You can use tabsets pretty easily
+
+```
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+```
+
+(example on next slide)
+
+---
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: build-fig-tabset
+#| echo: true
+plot_tabs <- mtcars |>
+  ggplot() + 
+  aes(x = drat, y = mpg) + 
+  geom_point() + 
+  geom_smooth(method = lm, formula = "y ~ x") + 
+  theme_bw(base_family = "Palatino", base_size = 20) + 
+  theme(
+    panel.grid.major = element_line(colour = 'grey90', size = 0.15),
+    panel.grid.minor = element_line(colour = 'grey90', size = 0.15)
+  )
+```
+
+### Output
+
+```{r}
+#| label: fig-tabset
+#| fig.cap: Tabset plot
+plot_tabs
+```
+:::
+
+
+
+
+# Linguistics stuff {.transition}
+
+## IPA symbols work in unicode
+
+- [/ʃæ.ˈriŋ.gæn/]{.ipa} i.e., `[/ʃæ.ˈriŋ.gæn/]{.ipa}` 
+
+- [a æ ɑ ɒ ɐ b ɓ β ʙ c ç d ɖ ɗ d͡z d͡ʑ d͡ʒ e ɘ ɛ ɜ ɞ ə f ɸ g ɡ ɠ ɢ ʛ ɰ h ɦ ħ ɧ ɥ ʜ i ɨ ɪ j ʝ ɟ ʄ k l ɫ ɬ ɮ ɭ ʟ m ɱ n ɳ ɲ ŋ ɴ o ø ɵ ɔ œ ɶ p q r ɹ ɾ ɽ ɻ ɺ ʁ ʀ s ʂ ɕ ʃ t ʈ t͡s t͡ʂ t͡ʃ u ʉ ʊ ɯ ʌ v ⱱ ʋ w ʍ x ɣ χ y ʏ ʎ z ʐ ʑ ʒ θ ð ʔ ʡ ʕ ʢ ʘ ǀ ǃ ǂ ǁ]{.ipa}
+
+- [Diacritics: e̟ e̘ e̺ e̤ ë e̪ e̯ ĕ e̻ e̼ e̞ e̽ ẽ e̝ e̠ e̙ e˞ e̜ e̹ e̩ t͡s e̚ ḛ e̬ e̥ ˈ ˌ ː ˑ ʰ ʷ ˡ ⁿ ʲ ˤ ˠ ˥ ˦ ˧ ˨ ˩]{.ipa} 
+
+- [Joined affricates: ʦ ʨ ʧ ʣ ʥ ʤ]{.ipa}
+
+
+## Clean tables
+
+- See @tbl-ex.
+
+| Word        | Phonology        | Phonetics                    |
+|:------------|-----------------:|-----------------------------:|
+| casa        | [/ˈka.sa/]{.ipa} | [[ˈka.sa]]{.ipa}             |
+| taco (Sp.)  | [/ˈta.ko/]{.ipa} | [[ˈta.ko]]{.ipa}             |
+| taco (Eng.) | [/ˈta.ko/]{.ipa} | [[ˈt<sup>h</sup>a.ko]]{.ipa} |
+
+: This is a table caption {#tbl-ex tbl-colwidths="[25,25,25]"}
+
+
+
+
+
+
+# Extras
+
+## Social embeds: Github gists {.scrollable}
+
+Embed a gist using: 
+
+``` {.markdown shortcodes="false"}
+{{< gist <USERNAME> <GIST_ID> >}}
+``` 
+
+{{< gist jvcasillas 7087d4d4d7ea977cf457ac180132151d >}}
+
+## Social embeds: Twitter {.scrollable}
+
+Embed a tweet using: 
+
+``` {.markdown shortcodes="false"}
+{{< tweet <USERNAME> <ID> >}}
+``` 
+
+{{< tweet user=juliesquid id=1557485909486059523 >}}
+
+
+## Social embeds: Vimeo
+
+``` {.markdown shortcodes="false"}
+{{< vimeo <VIDEO_ID> >}}
+```
+
+{{< vimeo 22439234 >}}
+
+## Social embeds: YouTube
+
+``` {.markdown shortcodes="false"}
+{{< youtube <VIDEO_ID> >}}
+```
+
+{{< youtube SyK81rX5P5I >}}
+
+## QR codes
+
+
+``` {.markdown shortcodes="false"}
+{{< qrcode link id width=100 height=100 colorDark='#cc0033' >}}
+```
+
+{{< qrcode www.jvcasillas.com homepage width=100 height=100 colorDark='#cc0033' >}}
+
+
+
+
+
+
+
+
+
+# Finishing up {.transition}
+
+## This is the final slide {.final}
+
+![](https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/164.png){.absolute top="0" right="0" width="55" height="55"}
+
+</br>
+
+### you can add your email, twitter, github, etc. info here
+
+Here is an example:
+
+|                                                                             |                                    |
+|----------------------------------------------------------------------------:|:-----------------------------------|
+|   <a href='mailto:joseph.casillas@rutgers.edu'>{{< fa solid envelope >}}</a>|joseph.casillas@rutgers.edu         |
+| <a href='www.jvcasillas.com/quarto-rutgers-theme/'>{{< fa solid link >}}</a>|jvcasillas.com/quarto-rutgers-theme |
+|         <a href='https://twitter.com/jvcasill'>{{< fa brands twitter >}}</a>|@jvcasill                           |
+|         <a href='https://github.com/jvcasillas'>{{< fa brands github >}}</a>|@jvcasillas                         |
+
+: {tbl-colwidths="[25,75]"}

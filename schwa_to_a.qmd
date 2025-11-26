@@ -1,0 +1,86 @@
+---
+title: "Schwa to /a/"
+shorttitle: "Schwa to /a/"
+author:
+  - name: Robert Esposito
+    corresponding: true
+    email: rme70@rutgers.edu
+    affiliations:
+      name: "Rutgers University"
+      department: Department of Spanish and Portuguese
+      address: 15 Seminary Pl.
+      city: New Brunswick
+      region: NJ
+      country: USA
+      postal-code: 08901
+author-note:
+  # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
+  disclosures:
+    # Example: This study was registered at X (Identifier Y).
+    study-registration: ~
+    # Acknowledge and cite data/materials to be shared.
+    data-sharing: ~
+    # Example: This article is based on data published in [Reference].
+    # Example: This article is based on the dissertation completed by [citation].  
+    related-report: ~
+    # Example: [Author name] has been a paid consultant for Corporation X, which funded this study.
+    conflict-of-interest: The authors have no conflicts of interest to disclose.
+    # Example: This study was supported by Grant [Grant Number] from [Funding Source].
+    financial-support: ~
+    # Example: The authors are grateful to [Person] for [Reason].
+    gratitude: ~
+    # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
+    authorship-agreements: ~
+number-sections: false
+abstract: "The abstract goes here."
+keywords: [the, keywords, go, here]
+floatsintext: true
+bibliography: "./lit/schwa_to_a.bib"
+format:
+  apaquarto-docx: default
+  apaquarto-html: default
+  apaquarto-pdf:
+    documentmode: man
+---
+
+```{r}
+#| include: false
+# load libs
+library(here)
+```
+
+<!-- The introduction should not have a level-1 heading such as Introduction. -->
+
+This is my first paragraph. Any section headings in the introduction should be in levels 2--5.
+
+## Section in Introduction
+
+This is a reference [@cohen2003applied].
+
+# Method
+
+## Participants
+
+## Measures
+
+## Procedure
+
+# Results
+
+# Discussion
+
+## Limitations and Future Directions
+
+## Conclusion
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+::: {#refs}
+:::
+
+# This Section Is an Appendix {#apx-a}
+
+
+# Another Appendix {#apx-b}
