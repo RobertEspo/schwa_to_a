@@ -1,0 +1,24 @@
+@martinez1984fonetica
+spanish: minimal centralization of unstressed syllables, not perceivable.
+
+need to figure out how to calculate eud, can you do it when you just have one vowel?
+
+plot:
+gam_3_preds_2 |>
+plot(series = "timep", comparison = "session") +
+facet_grid(cols = vars(vowel)) # maybe modify this to do individual participants? would need to modify predict_gams to include random effects?
+
+plan: model f1 & f2 separately. predict with predict_gams. combine the resulting dfs and plot with gganimate.
+
+METHODS:
+10 participants shadowed 126 words that they believed to be Spanish. 
+They repeated each word 3 times, for a total of 378 words per participant.
+3780 words in total.
+All words were bisyllabic paroxytones. The final vowel was always unstressed /a/.
+Force alignment with Montreal Forced Aligner. Corrections have started.
+FastTrack used. Set to 3 formants (so it prioritizes the first 3 formants). Extracts values every 2 ms.
+Vowels were of different durations, so:
+1. time was normalized
+2. normalized times were binned into 11 bins
+3. f1 and f2 averaged for each bin
+4. plotted to f1xf2 space to see trajectory

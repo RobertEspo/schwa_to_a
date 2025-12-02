@@ -2,25 +2,23 @@
 source(here::here("scripts","r","00_libs.R"))
 
 # load raw data
-dat_raw <- read_csv(here("data","dat.csv"))
+dat_raw <- read_csv(here("data","data_formants.csv"))
 
 # tidy dat
 dat_tidy <- dat_raw %>%
   
   # remove f3 values
-  select(-starts_with("f3_")) %>%
+  select(time, f1, f2, source_file) %>%
   
   # remove NA values
   drop_na() %>%
-
-  # filter for target unstressed /a/
-  filter(following_phone == "boundary") %>%
   
   # separate file name into participant, session, & word+repetition
-  separate(file_name, into = c("participant","session","item"), sep = "_") %>%
+  separate(source_file, into = c("participant","session","item", "delete_me"), sep = "_") %>%
+    
+  select(-delete_me) %>%
   
   mutate(
-    
     # separate word & repetition
     rep_num = str_extract(item, "\\d$") %>% as.numeric,
     rep_num = if_else(is.na(rep_num), 1, rep_num + 1),
@@ -29,34 +27,47 @@ dat_tidy <- dat_raw %>%
     # clean session col
     session = as.factor(str_extract(session, "\\d+$"))
   ) %>%
-  
-  # computer f1 centroid
-  rowwise() %>%
-  mutate(f1_centroid = mean(c_across(starts_with("f1_")), na.rm = TRUE)) %>%
+  mutate(participant = as.factor(participant))
+
+dat_participants <- dat_tidy %>%
+  group_by(participant) %>%
+  group_split() %>%
+  setNames(unique(dat_tidy$participant))
+
+dat_participants_processed <- lapply(
+  dat_participants,
+  function(df) {
+    df %>%
+      group_by(session, item, rep_num) %>%
+      mutate(
+        norm_time = (time - min(time)) / (max(time) - min(time)),
+        step = round(norm_time * 10) + 1
+      ) %>%
+      ungroup() %>%
+      select(-norm_time) %>%
+      mutate(
+        rep_num = as.factor(rep_num),
+        step = as.numeric(step)
+      ) %>%
+      group_by(session, step) %>%
+      summarize(
+        mean_f1 = mean(f1),
+        mean_f2 = mean(f2),
+        .groups = "drop"
+      )
+  }
+)
+
+dat_gams <- dat_tidy %>%
+  group_by(session, item, rep_num) %>%
+  mutate(norm_time = (time - min(time)) / (max(time) - min(time)),
+         step = round(norm_time * 10) + 1) %>%
   ungroup() %>%
-  
-  # computer f2 centroid
-  rowwise() %>%
-  mutate(f2_centroid = mean(c_across(starts_with("f2_")), na.rm = TRUE)) %>%
-  ungroup()
-
-# make df long for formant percentages
-dat_long <- dat_tidy %>%
-  pivot_longer(
-    cols = c(starts_with("f1_"), starts_with("f2_")) & 
-      !ends_with("centroid"),
-    names_to = c("formant", "percent"),
-    names_pattern = "(f[12])_(.*)",
-    values_to = "hz"
+  select(-norm_time) %>%
+  mutate(
+    rep_num = as.factor(rep_num),
+    step = as.numeric(step)
   ) %>%
-  mutate(percent = as.numeric(percent),
-         participant = as.factor(participant),
-         item = as.factor(item))
-
-# only f1 values in col "formant"
-dat_long_f1 <- dat_long %>%
-  filter(formant == "f1")
-
-# only f2 values in col "formant"
-dat_long_f2 <- dat_long %>%
-  filter(formant == "f2")
+  group_by(session, step) %>%
+  summarize(mean_f1 = mean(f1),
+            mean_f2 = mean(f2))
