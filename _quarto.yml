@@ -1,0 +1,9 @@
+project:
+  title: "Schwa to /a/"
+  render:
+    - "*.qmd"
+    - "!./docs/lit/"
+    - "README.qmd"
+
+bibliography: ./lit/schwa_to_a.bib
+csl: ./lit/apa.csl

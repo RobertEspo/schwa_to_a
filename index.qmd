@@ -48,6 +48,30 @@ theme_set(theme_grey(base_size = 30))
 
 # The basics {.transition}
 
+Give the outline.
+
+# models of L2 acquisition
+
+slm, l2lp
+
+# vowels in spanish vs english
+
+typical issues for L1 English L2 Spanish
+the focus: unstressed /a/ vs schwa
+
+# methodology
+
+10 participants shadowed 126 words that they believed to be Spanish. 
+They repeated each word 3 times, for a total of 378 words per participant.
+3780 words in total.
+All words were bisyllabic paroxytones. The final vowel was always unstressed /a/.
+Force alignment with Montreal Forced Aligner. Corrections have started.
+FastTrack used. Set to 3 formants (so it prioritizes the first 3 formants). Extracts values every 2 ms.
+Vowels were of different durations, so:
+1. time was normalized
+2. normalized times were binned into 11 bins
+3. f1 and f2 averaged for each bin
+4. plotted to f1xf2 space to see trajectory
 
 ## Thanks! {.final visibility="uncounted"}
 
