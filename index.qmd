@@ -1,6 +1,5 @@
 ---
 title: "Schwa to /a/: Phonetic Category Development in L2 Spanish"
-subtitle: "Schwa to /a/"
 author: "Robert Esposito"
 institute: "Rutgers University"
 date: "Last update: `r Sys.Date()`"
@@ -45,33 +44,285 @@ theme_set(theme_grey(base_size = 30))
 
 ```
 
-
 # The basics {.transition}
 
-Give the outline.
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+L1 English L2 Spanish pronunciation of unstressed /a/
+:::
+:::
 
-# models of L2 acquisition
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Methodology
+:::
+:::
 
-slm, l2lp
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Preliminary results
+:::
+:::
 
-# vowels in spanish vs english
+# Spanish unstressed /a/ {.transition}
 
-typical issues for L1 English L2 Spanish
-the focus: unstressed /a/ vs schwa
+## The vowel space
 
-# methodology
+![](assets/phonetics_final_figs/vowels.png)
 
-10 participants shadowed 126 words that they believed to be Spanish. 
-They repeated each word 3 times, for a total of 378 words per participant.
-3780 words in total.
-All words were bisyllabic paroxytones. The final vowel was always unstressed /a/.
-Force alignment with Montreal Forced Aligner. Corrections have started.
-FastTrack used. Set to 3 formants (so it prioritizes the first 3 formants). Extracts values every 2 ms.
-Vowels were of different durations, so:
+::: footer
+@bradlow1995comparative; @flemming2009phonetics
+:::
+
+## Effects of stress on vowel quality
+
+::: {.fragment .fade-up}
+Unstressed vowels are reduced in English, but not Spanish
+:::
+
+::: {.fragment .fade-up}
+[ˈæɾəm] 'atom'
+
+[əˈtʰɑmɪk] 'atomic'
+:::
+
+::: {.fragment .fade-up}
+[ˈkasa] 'house'
+:::
+
+## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+
+## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+
+@iruela1997adquisicion
+
+## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+
+@iruela1997adquisicion
+
+@cobb2009pronunciacion
+
+## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+
+@iruela1997adquisicion
+
+@cobb2009pronunciacion
+
+@aldrich2014acquisition
+
+## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+
+@iruela1997adquisicion
+
+@cobb2009pronunciacion
+
+@aldrich2014acquisition
+
+@cobb2015adult
+
+## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+
+@iruela1997adquisicion
+
+@cobb2009pronunciacion
+
+@aldrich2014acquisition
+
+@cobb2015adult
+
+@bland2016speech
+
+## Let's focus on one
+
+Development of stressed and unstressed /a/ in L2 Spanish
+
+::: footer
+@aldrich2014acquisition
+:::
+
+## Participants
+
+- 9 at-home L1 English L2 Spanish
+- 10 study abroad L1 English L2 Spanish
+- 5 L1 Spanish
+
+::: footer
+@aldrich2014acquisition
+:::
+
+## Methodology
+
+- Oral interview
+- Read a short story
+- Read a word list
+
+- Formant values measured at vowel midpoint
+
+::: footer
+@aldrich2014acquisition
+:::
+
+## Results
+
+The L2 Spanish speakers centralized unstressed /a/
+
+::: footer
+@aldrich2014acquisition
+:::
+
+# The present study {.transition}
+
+## Research Question
+
+1. Do L1 English L2 Spanish learners in an immersion program demonstrate less centralization of unstressed /a/ over the course of six weeks?
+
+## participants
+
+10 L1 English L2 Spanish upper A2 learners
+6 week immersion program
+
+## materials & task
+
+::: {.fragment .fade-up}
+participants shadowed individual words
+:::
+
+::: {.fragment .fade-up}
+126 words that they believed to be Spanish
+:::
+
+::: {.fragment .fade-up}
+They repeated each word 3 times, for a total of 378 words per participant
+:::
+
+::: {.fragment .fade-up}
+3780 words in total
+:::
+
+::: {.fragment .fade-up}
+All words were bisyllabic paroxytones
+:::
+
+::: {.fragment .fade-up}
+The final vowel was always unstressed /a/
+:::
+
+## Some example stimuli
+
+ada
+
+gaka
+
+gota
+
+ita
+
+kaka
+
+eda
+
+## Formant extraction
+
+::: {.fragment .fade-up}
+Montreal Forced Aligner. Corrections have started.
+:::
+
+::: {.fragment .fade-up}
+FastTrack [@barreda2021fast]. 
+
+Set to 3 formants (so it prioritizes the first 3 formants). 
+
+Extracts values every 2 ms.
+:::
+
+::: footer
+@de2022l1; @amengual2020language
+:::
+
+## data processing
+
+Vowels were of different durations, so...
+
+::: incremental
 1. time was normalized
 2. normalized times were binned into 11 bins
 3. f1 and f2 averaged for each bin
 4. plotted to f1xf2 space to see trajectory
+:::
+
+## Averaged trajectories
+
+![](assets/phonetics_final_figs/average_trajectories.png)
+
+## Averaged trajectories
+
+```{r}
+#| echo: false
+knitr::include_graphics(here("assets","phonetics_final_figs","average_trajectories.gif"))
+```
+
+## Trajectories of one participant
+
+![](assets/phonetics_final_figs/avg_trajectory_ems.png)
+
+## Trajectory of one participant
+
+```{r}
+#| echo: false
+knitr::include_graphics(here("assets","phonetics_final_figs","average_trajectories_ems.gif"))
+```
+
+# Going Forward {.transition}
+
+## What can this tell us?
+
+- What we can expect from 6 weeks of immersion
+- What we can expect without explicit instruction on unstressed /a/
+- Now we can think of interventions!
+
+## Suggestions?
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Need to correct remaining segmentations
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+run GAMMs model
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Compare unstressed Spanish /a/ to English /ə/ and /ɑ/
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Euclidean distance measures
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Thinking of getting measurements at 10% intervals instead of every 2 ms
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Use data from different tasks
+:::
+:::
 
 ## Thanks! {.final visibility="uncounted"}
 

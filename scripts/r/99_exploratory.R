@@ -10,7 +10,6 @@ average_trajectories <- ggplot(dat_gams, aes(x = mean_f2, y = mean_f1)) +
   transition_time(step) +
   ease_aes('linear') +
   shadow_mark(past = TRUE, future = FALSE, alpha = 0.3)
-  
 
 anim_save(average_trajectories, here("assets","phonetics_final_figs","average_trajectories.gif"), renderer = gifski_renderer())
 
@@ -57,3 +56,16 @@ average_trajectories_ems <- ggplot(dat_participants_processed$ems,
 animate(average_trajectories_ems, renderer = gifski_renderer())
 
 anim_save(here("assets","phonetics_final_figs","average_trajectories_ems.gif"), renderer = gifski_renderer())
+
+average_trajectory <- ggplot(dat_gams, aes(x = mean_f2, y = mean_f1)) +
+  facet_wrap(~session) +
+  scale_y_reverse() +
+  scale_x_reverse() +
+  geom_text(aes(label = step)) +
+  labs(
+    title = "Average Trajectories",
+    x = "F2 (Hz)",
+    y = "F1 (Hz)"
+  )
+
+ggsave(here("assets","phonetics_final_figs","average_trajectories.png"))
