@@ -1,5 +1,16 @@
-@martinez1984fonetica
-spanish: minimal centralization of unstressed syllables, not perceivable.
+literature review
+
+@martinez1984fonetica, tomas1957documentos, 
+l1 spanish: minimal centralization of unstressed syllables, not perceivable. low-level phonetic phenomenon.
+willis2005initial, lipski1994tracing: there may be dialectal differences, but no variety unequivocably displays morphophonological reduction like English.
+
+English allophonic unstressed vowel reduction, morphophonological:
+Barnes 2006; Fourakis 1991; Lindblom 1963
+
+morphophonological vs low-level phonetic differences (Bybee 2001)
+
+
+
 
 need to figure out how to calculate eud, can you do it when you just have one vowel?
 

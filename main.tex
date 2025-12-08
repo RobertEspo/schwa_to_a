@@ -1,0 +1,425 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  a4paper,
+  11pt,
+  twocolumn]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+%------------------------------------------------------------------------------%
+% PAPER TEMPLATE FOR ICPHS 2023 Prague                                         %
+%                                                                              %
+% Original template downloaded from:                                           %
+% http://www.icphs2023.org/call-for-papers/                                    %
+%                                                                              %
+% Reformatted to work with Rmarkdown and R by:                                 %
+% Joseph V. Casillas | Rutgers Univesity |11/11/2022                           %
+%                                                                              %
+% Available for download at:                                                   %
+% https://github.com/jvcasillas/icphs2023_rmd_template                         %
+%------------------------------------------------------------------------------%
+
+
+
+% Packages
+\usepackage{./includes/tex/icphs2023}
+\usepackage{metalogo} 
+\usepackage{epstopdf}
+\usepackage{tipa}
+
+% Links and urls must be black
+%\hypersetup{urlcolor=black, citecolor=black, linkcolor=black}
+
+
+% Packages removed from icphs2023.sty because of conflicts
+% They have been added to the .Rmd yaml front matter
+% \usepackage[latin1]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage[leqno,fleqn]{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\title{Schwa to /a/: Development of Unstressed Vowels in L2 Spanish}
+\author{Robert Esposito}
+\organization{Department of Spanish and Portuguese, Rutgers University}
+\email{rme70@scarletmail.rutgers.edu}
+
+
+\maketitle
+
+\begin{abstract}
+Native (L1) English second language (L2) Spanish learners acquiring the Spanish vowel system are tasked with adjusting entrenched vowel categories and morphophonological rules. For example, allophonic variation of stressed and unstressed vowels in English is not present in Spanish, but the triggering environments for the variation is present in Spanish. As such, learners of Spanish must come to ignore those triggering environments during perception and production. The present study examines the production of unstressed Spanish /a/ by 10 L1 English L2 Spanish learners during a seven-week domestic immersion program in a semi-longitudinal study. Preliminary acoustic analysis revealed that within the first week, participants fronted and lowered their production of unstressed /a/, assumed here to correspond to less centralization and more target-like production. The findings are situated within current models of second language speech learning and provide often-sought longitudinal data on an understudied phenomenon.
+\end{abstract}
+
+\keywords{phonetics, phonology, second language acquisition, Spanish, English}
+
+
+\section{Introduction}
+
+Adult native English (L1) learners of Spanish as a second language (L2)
+face difficulties producing target-like Spanish vowels. Each of the five
+Spanish vowels /i e a o u/ is produced in a vowel space that corresponds
+to multiple English vowel categories, so learners must ignore phonetic
+differences relevant to their L1. English vowels also undergo
+morphophonological processes which do not exist in Spanish. As such, L1
+English L2 Spanish learners begin the endeavor of learning Spanish with
+expectations from their L1, which shape their perception and production
+and lead to non-target-like production of vowels. For example, a learner
+may produce the Spanish word /\textipa{"}ka.sa/ as non-target-like
+{[}\textipa{"}ka.s\textipa{@}{]} due to a morphophonological
+centralization process in English in which unstressed vowels tend to be
+reduced to a centralized vowel. The present study investigates the
+production of Spanish unstresed /a/ in 10 L1 English L2 Spanish beginner
+learners during a seven-week domestic immersion program in a
+semi-longitudinal design. Instead of extracting formant values at solely
+the midpoint of the vowel, acoustic analysis focuses on the trajectory
+of formant values throughout the temporal duration of the vowel to
+obtain a more holistic view of vowel centralization. Results will
+provide information about typical development of L1 English L2 Spanish
+beginner learners with growing L2 exposure and how learners adjust their
+production in the face of growing evidence against a process present
+only in the L1.
+
+\section{Literature Review}
+
+\subsection{Spanish and English Vowels}
+
+Reported variation in Spanish varieties should not be ignored in general
+\cite{willis2005initial,lipski1994tracing,alba2006accounting}, but vowel
+production has been found to be relatively uniform across varieties
+\cite{tomas1957documentos,quilis1993tratado}, whereas descriptions of
+English vowel systems vary more widely
+\cite{ladefoged2006course,bradlow1995comparative}. Spanish can be said
+to have a subset of English vowel phonemes /i e a o u/, but the phonetic
+realizations of these phonemes are not identical.
+
+A major difference to highlight between the two systems is the impact of
+prosodic effects, such as lexical stress, on the realization of vowels.
+One of the major acoustic correlates of lexical stress
+cross-linguistically is vowel reduction in unstressed syllables
+\cite{gordon2017acoustic}. Spanish has been found to have minimal
+centralization of vowels in unstressed syllables
+\cite{martinez1984fonetica,tomas1957documentos}, representing a possibly
+universal low-level phonetic phenomenon \cite{kapatsinski2020vowel}. On
+the other hand, English presents both low-level phonetic reduction like
+Spanish, as well as a language-specific, morphophonologic, categorical,
+rule-based process in which vowels in lexically unstressed syllables are
+realized as centralized vowels \textipa{[I]} or \textipa{[@]}
+\cite{bybee2003phonology}. For example, the first vowel in the English
+word `atom' is realized as \textipa{[\ae]} in the tonic syllable, but
+when realized in a non-tonic syllable like in the derived word `atomic',
+the vowel is obligatorily reduced to \textipa{[@]}.
+
+\subsection{L1-L2 Transfer Effects}
+
+L1 English L2 Spanish learners typically do not present major issues
+acquiring phonological vowel contrasts \cite{morrison2003perception},
+but the phonetic and morphophonological differences between their L1 and
+L2 may result in non-target-like production
+\cite{aldrich2014acquisition,cobb2009pronunciacion,cobb2015adult,iruela1997adquisicion,menke2010second}.
+The acquisition path of Spanish vowels by L1 English L2 Spanish learners
+can be accurately described by a number of frameworks such as the Speech
+Learning Model revised \cite{flege2021revised}, the Perceptual
+Assimilation Model \cite{best2007nonnative}, or, as will be explored
+here, the Second Language Linguistic Perception (L2LP) model
+\cite{escudero2004bridging,escudero2005linguistic,escudero2007second,escudero2009linguistic,van2015learning}.
+
+L2LP proposes that learners of a L2 create a new grammar via \emph{full
+copying/full access}. Accordingly, difficulties in acquiring L2 speech
+sounds are accounted for by phonetic similarities, differences, or
+perceived equivalences to contrasts present in the L1. The learner must
+adjust their perception grammar to account for L2 input. Furthermore, it
+is maintained that perception precedes and motivates production
+\cite{casillas2020phonetic}. Based on this framework, it is expected
+linguistic processes present in the L1 may undesirably surface in the
+L2, but that these transfer effects may be reduced with increasing
+proficiency and exposure to the L2. For example,
+\cite{casillas2016longitudinal} found that L1 English L2 Spanish late
+learners over a seven-week home-immersion program shifted perception and
+production of voice onset time categorical boundaries from initially
+English-like towards more Spanish-like values.
+
+As mentioned, English presents vowel allophony in lexically stressed and
+unstressed positions not present in Spanish. In a cross-sectional study,
+\cite{cobb2015adult} found that L1 English L2 Spanish late learners of
+Spanish, divided into ``intermediate'' and ``advanced'' proficiency
+groups, produced unstressed Spanish vowels as more centralized than L1
+Spanish controls. Although valuable, \cite{escudero2005linguistic} urges
+for the inclusion of longitudinal data from beginning language learners.
+Longitudinal L2 acquisition data has provided evidence, for example,
+that the formation of L2 phonetic categories can occur abruptly at early
+stages, and they are particularly susceptible to cross-linguistic
+influence \cite{casillas2020phonetic}.
+
+Furthermore, \cite{cobb2015adult}, similar to many other vowel
+production studies, collected formant values at only the vowel midpoint.
+The midpoint is most likely the least centralized portion of the vowel,
+and thus may not present the full story. For example,
+\cite{jacewicz2011vowel} calculates a ``spectral centroid'', a measure
+calculated from formant values at 5 equidistant temporal locations in
+the vowel. Similarly, \cite{coretta2024tutorial} suggests collecting
+formant values at equidistant temporal locations in the vowel and to
+model the vowel's trajectory instead of calculating a single-point
+value.
+
+\section{The Present Study}
+
+In sum, previous research has pointed to the difficulties of L1 English
+L2 Spanish target vowel production, particularly when it comes to
+unstressed vowels due to L1-L2 transfer effects. Available studies
+typically present cross-sectional designs and measure only single-point
+values. From an L2LP perspective, cross-sectional designs only tell part
+of the story, and longitudinal data will reveal how the L2 grammar is
+progressively adjusted as the learner receives more input.
+Methodologically, a more holistic view of vowels via the collection of
+various formant values along the vowel's temporal realization may reveal
+fine-grain phonetic patterns not seen with a single-point value. As
+such, the present study tracks the production of unstressed /a/ in 10 L1
+English L2 Spanish beginner late learners during a seven-week domestic
+immersion program in a semi-longitudinal design. With this data, the
+following research questions (RQs) are hoped to be answered:
+
+\begin{enumerate}
+\item Do L1 English L2 Spanish learners centralize unstressed /a/?
+\item Do L1 English L2 Spanish learners reduce centralization of unstressed /a/ as they progress through a 7-week domestic immersion program?
+\end{enumerate}
+
+Based on the L2LP
+\cite{escudero2004bridging,escudero2005linguistic,escudero2007second,escudero2009linguistic,van2015learning},
+it is expected that learners will produce unstressed /a/ due to lexical
+stress effects present in the L1
+\cite{bybee2003phonology,cobb2009pronunciacion,cobb2015adult}. It is
+hypothesized that centralization of unstressed /a/ will reduce over the
+seven-week period \cite{casillas2016longitudinal}, reflecting gains in
+proficiency and increased exposure to the L2 (although the present study
+cannot differentiate individual contributions of these effects).
+Furthermore, as has been seen in research on other segmentals
+\cite{casillas2020phonetic}, it is hypothesized that participants may
+demonstrate abrupt, as opposed to gradual, development in target-like L2
+production of unstressed /a/.
+
+\section{Methodology}
+
+\subsection{Participants}
+
+Ten L1 English L2 Spanish late learners (females = 6) were recruited for
+the present study. They reported no prior experience with any foreign
+languages, nor had they spent a significant amount of time in a foreign
+country. Participants were enrolled in the Middlebury Language School
+program's beginner classes, placed via a placement test and interviews
+with two faculty members of the program. The Middlebury Language School
+program is a seven-week domestic immersion program where students are
+encouraged and quasi-obligated to use their target language at all
+times. During the seven-week program, participants received high amounts
+of L2 input (from native and non-native speakers) and reported minimal
+L1 use.
+
+\subsection{Materials}
+
+Participants completed a delayed repetition task. The following sections
+describe the target words, the auditory stimuli, and recordings.
+
+\subsubsection{Target Words}
+
+The analyzed materials consisted of 18 real and nonce words. Each word
+was a bisyllabic paroxytone with /a/ as the final vowel. While the first
+syllable variably contained an onset, the second syllable always
+contained an onset (e.g., ada, ita, gaka, gota).
+
+\subsubsection{Auditory Stimuli}
+
+A twenty-nine year old native female spanish speaker from Cádiz, Spain
+produced the auditory stimuli. The 18 items were listed on a sheet of
+paper and the speaker read the list aloud in the carrier phrase `X es la
+palabra' (\emph{X is the word}). A Shure SM10A dynamic head-mounted
+microphone was used to record the items. A Sound Devices MM-1
+pre-amplifier boosted the signal and sent it to a laptop computer where
+it was recorded using Praat at a 44.1 kHz sample rate with a 16-bit
+quantization \cite{boersma2025praat}. The recording took place in a
+sound attenuated booth in the Arizona Applied Phonetics Laboratory at
+the University of Arizona.
+
+\subsubsection{Recordings}
+
+Participants were recorded in a quiet classroom on site at Middlebury
+College. The same procedure described for the auditory stimuli was used.
+
+\subsection{Acoustic Analysis}
+
+Participant recordings were transcribed and segmented automatically via
+the Montreal Forced Aligner \cite{mcauliffe2017montreal}. Incorrect
+segmentations (e.g., unaligned or misidentified phones) were manually
+corrected. The Praat script Fast Track \cite{barreda2021fast} was then
+used to extract formant values at 3 ms intervals. As recommended by the
+author, the script was set to optimize extraction of F1 and F2, as those
+are the formants of interest. Due to vowel durational differences, vowel
+duration was normalized and binned into 11 bins. The average F1 and F2
+values were then calculated for each bin.
+
+\subsection{Procedure}
+
+Participants completed the first experimental session on the second or
+third day of the program; further experimental sessions took place every
+Sunday, for a total of 7 sessions. PsychoPy2 presented the experimental
+stimuli randomly. Stimuli were presented aurally via the native Spanish
+speaker recordings in the first session. Participants listened to and
+repeated the 18 items 3 times. In the following sessions, participants
+were visually presented the stimuli. After listening producing the item,
+participants pressed a button on a keyboard to advance to the next item.
+Each participant provided the dataset with 378 items for a total of 3780
+tokens (18 words * 3 repetitions * 7 weeks * 10 participants). The
+participants finished the task in approximately 10 minutes.
+
+\subsection{Statistical Analysis}
+
+The present analysis is descriptive. Vowel trajectories were averaged
+across all participants for each of the seven weeks.
+
+\section{Results}
+
+Fig. \ref{fig:avgtrajectories} displays the averaged unstressed /a/
+trajectories of the 10 participants over the seven-week domestic
+immersion program. Visually, it can be seen that by the second session
+(a week into the program), participants' unstressed /a/ trajectories
+started from a more fronted point and ended at a lower point compared to
+the first session. This adjustment was maintained throughout the 7
+weeks.
+
+\begin{figure}[!ht]
+\begin{center}
+\includegraphics[width=6cm]{./includes/figures/average_trajectories.png}
+\caption{Averaged trajectories of unstressed /a/ from 10 participants over seven weeks. Each individual point represents the linear, binned temporal moment in the vowel (i.e., 1 = start of vowel, 11 = end of vowel).}\label{fig:avgtrajectories}
+\end{center}
+\end{figure}
+
+\section{Discussion}
+
+The present work examined the production of unstressed /a/ in L1 English
+L2 Spanish beginner learners in a semi-longitudinal design. Based on
+L2LP
+\cite{escudero2004bridging,escudero2005linguistic,escudero2007second,escudero2009linguistic,van2015learning},
+it was expected that these learners would present centralization of
+unstresesd /a/ due to L1-L2 transfer
+\cite{bybee2003phonology,cobb2009pronunciacion,cobb2015adult}, but
+transfer effects would be mitigated with increasing L2 proficiency and
+exposure.
+
+Preliminary data suggests that in the first session, participants
+produced more centralized vowels than in later sessions. This can be
+seen in the fronting and lowering seen in later sessions. As such, the
+current data tentatively supports the hypothesis that L1 English L2
+Spanish speakers would initially present centralized unstressed /a/ in
+Spanish, as well as develop more target-like uncentralized /a/ as the
+program progressed. In fact, the development occurred within the first
+week and was maintained throughout all sessions, suggesting an abrupt
+adjustment \cite{casillas2020phonetic}.
+
+\section{Limitations and Future Direction}
+
+There a number of improvements that can be made to the current study.
+
+First, there is available data on the participants' productions of
+stressed /a/ that should be analyzed in comparison to their unstressed
+/a/. A measure such as Euclidean distance \cite{coretta2024tutorial} can
+be used as a more robust measure of centralization.
+
+Second, formant values were collected every three miliseconds, vowel
+durations were normalized, and formant values were binned. This is not a
+common practice, and a more robust methodology should be taken. For
+example, collecting formant values at some amount of equidistant points
+along the vowel \cite{coretta2024tutorial,jacewicz2011vowel}.
+
+Third, no statistical analysis was performed. Vowel trajectory presents
+an opportunity to use a Generalized Additive Mixed Model (GAMM), which
+allows for modelling of non-linear data such as vowel trajectories
+\cite{coretta2024tutorial}. By modeling the vowel trajectories, a deeper
+understanding of where meaningful differences occur may arise.
+
+Lastly, the L2LP posits that perception precedes production
+\cite{escudero2007second}, but the current data cannot provide evidence
+on this topic. In a case like this, perceptual boundaries of /a/ versus
+\textipa{/@/} could be investigated in L1 English L2 learners
+\cite{miller1989auditory}.
+
+\section{Conclusion}
+
+The present study analyzed the production of unstressed /a/ in 10 L1
+English L2 Spanish beginner learners in a domestic immersion program in
+a semi-longitudinal design over seven weeks. The study deepens our
+understanding of how L1 morphophonological processes not present in the
+L2 may arise in L2 production, as well as presenting a less common way
+of analyzing vowel production by looking at the entire spectral
+envelope, instead of only a single-point value. The longitudinal data
+suggests that lexical stress effects in the L1 can be abruptly curtailed
+in the L2 with growing L2 proficiency and exposure.
+
+\subsection{References}
+
+\bibliographystyle{./includes/bib/IEEEtran.bst}
+\bibliography{./includes/bib/icphs2023.bib}
+
+\theendnotes
+
+\end{document}
