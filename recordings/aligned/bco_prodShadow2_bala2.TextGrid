@@ -13,11 +13,11 @@ item []:
         xmax = 0.97 
         intervals: size = 3 
         intervals [1]:
-            xmin = 0.0 
-            xmax = 0.33 
+            xmin = 0 
+            xmax = 0.39102730077446435 
             text = "" 
         intervals [2]:
-            xmin = 0.33 
+            xmin = 0.39102730077446435 
             xmax = 0.93 
             text = "bala" 
         intervals [3]:
@@ -31,11 +31,11 @@ item []:
         xmax = 0.97 
         intervals: size = 6 
         intervals [1]:
-            xmin = 0.0 
-            xmax = 0.33 
+            xmin = 0 
+            xmax = 0.39102730077446435 
             text = "" 
         intervals [2]:
-            xmin = 0.33 
+            xmin = 0.39102730077446435 
             xmax = 0.53 
             text = "b" 
         intervals [3]:
