@@ -2,72 +2,45 @@
 source(here::here("scripts","r","00_libs.R"))
 
 # load raw data
-dat_raw <- read_csv(here("data","data_formants.csv"))
+dat_raw <- read_csv(here("data","formant_dat.csv"))
 
 # tidy dat
-dat_tidy <- dat_raw %>%
+dat_tidy_wide <- dat_raw %>%
   
-  # remove f3 values
-  select(time, f1, f2, source_file) %>%
-  
-  # remove NA values
-  drop_na() %>%
-  
-  # separate file name into participant, session, & word+repetition
-  separate(source_file, into = c("participant","session","item", "delete_me"), sep = "_") %>%
-    
-  select(-delete_me) %>%
-  
-  mutate(
-    # separate word & repetition
-    rep_num = str_extract(item, "\\d$") %>% as.numeric,
-    rep_num = if_else(is.na(rep_num), 1, rep_num + 1),
-    item = str_remove(item, "\\d$"),
-    
-    # clean session col
-    session = as.factor(str_extract(session, "\\d+$"))
+  # remove unnecessary cols
+  select(
+    file_name:f2_90,
+    -word
   ) %>%
-  mutate(participant = as.factor(participant))
-
-dat_participants <- dat_tidy %>%
-  group_by(participant) %>%
-  group_split() %>%
-  setNames(unique(dat_tidy$participant))
-
-dat_participants_processed <- lapply(
-  dat_participants,
-  function(df) {
-    df %>%
-      group_by(session, item, rep_num) %>%
-      mutate(
-        norm_time = (time - min(time)) / (max(time) - min(time)),
-        step = round(norm_time * 10) + 1
-      ) %>%
-      ungroup() %>%
-      select(-norm_time) %>%
-      mutate(
-        rep_num = as.factor(rep_num),
-        step = as.numeric(step)
-      ) %>%
-      group_by(session, step) %>%
-      summarize(
-        mean_f1 = mean(f1),
-        mean_f2 = mean(f2),
-        .groups = "drop"
-      )
-  }
-)
-
-dat_gams <- dat_tidy %>%
-  group_by(session, item, rep_num) %>%
-  mutate(norm_time = (time - min(time)) / (max(time) - min(time)),
-         step = round(norm_time * 10) + 1) %>%
-  ungroup() %>%
-  select(-norm_time) %>%
-  mutate(
-    rep_num = as.factor(rep_num),
-    step = as.numeric(step)
+  
+  # separate file name into participant and two temporary cols
+  separate(., file_name, into = c("participant","temp1","temp2"), sep = "_") %>%
+  
+  # separate temp1 into task type & session number
+  extract(temp1, into = c("task","session"),
+          regex = "(prodShadow)(\\d+)") %>%
+  
+  # separate temp2 into word and repetition
+  extract(temp2, into = c("item","rep"),
+          regex = "([a-zA-Z]+)(\\d*)"
   ) %>%
-  group_by(session, step) %>%
-  summarize(mean_f1 = mean(f1),
-            mean_f2 = mean(f2))
+  
+  # recode repetition col
+  mutate(
+    rep = as.integer(rep),
+    rep = if_else(is.na(rep), 1L, rep + 1L),
+    
+  # add duration
+  dur = end_time - start_time,
+  
+  # add (un)stressed /a/ cols
+  unstressed_a = as.factor(if_else(following_phone == "boundary" & phoneme == "a", 1, 0)),
+  stressed_a = as.factor(if_else(unstressed_a == 0 & phoneme == "a", 1, 0))
+  ) %>%
+  mutate(
+    participant = as.factor(participant),
+    session = as.factor(session),
+    item = as.factor(item),
+    rep = as.factor(rep),
+    phoneme = as.factor(phoneme)
+  )
