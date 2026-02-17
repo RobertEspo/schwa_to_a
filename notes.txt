@@ -1,0 +1,14 @@
+look at omnibus model.
+look at main effects to see anything.
+look at random effects.
+add information about spanish/english use to model from joseph's data.
+indication of what activities they participated in?
+didn't have specific training on schwa.
+check aptitude/motivation things.
+
+multivariate model. model f1 and f2 at the same time so you don't have to use separate models. simonet paper w/ coronal consonants. gives same info, cleaner, more parsimonious. bad name b/c traditionally means more than one predictor.
+
+what's more important? using target language or input? compare w/ study abroad data. they get tons of input and have to use target language all the time.
+
+check out:
+language learning. language and speech. joseph's dissertation.
