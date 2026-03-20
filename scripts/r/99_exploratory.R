@@ -1,7 +1,7 @@
 source(here::here("scripts","r","00_libs.R"))
 source(here::here("scripts","r","02_load_data.R"))
 
-dat_tidy_long <- dat_tidy_wide %>%
+dat_tidy_long_plots <- dat_tidy_wide %>%
   rowwise() %>%
   mutate(id = paste(participant, session, item, rep, sep = "_")) %>%  # unique token ID
   ungroup() %>%
@@ -19,7 +19,7 @@ dat_tidy_long <- dat_tidy_wide %>%
     ))) %>%
   na.omit()
 
-dat_tidy_long_means <- dat_tidy_long %>%
+dat_tidy_long_means <- dat_tidy_long_plots %>%
   group_by(participant, session, step, stress) %>%
   summarise(
     mean_f1 = mean(f1, na.rm = TRUE),
@@ -119,71 +119,3 @@ walk(
     )
   }
 )
-
-
-################################################################################
-
-bda_data <- dat_tidy_wide %>%
-  rowwise() %>%
-  mutate(
-    f1_mean = mean(c_across(starts_with("f1_")), na.rm = TRUE),
-    f2_mean = mean(c_across(starts_with("f2_")), na.rm = TRUE)
-    
-  ) %>%
-  ungroup() %>%
-  mutate(
-    stress = as.factor(case_when(
-      stressed_a == 1 & unstressed_a == 0 ~ 1,
-      stressed_a == 0 & unstressed_a == 1 ~ 0,
-      TRUE ~ NA
-    ))) %>%
-  group_by(participant) %>%
-  mutate(
-    f1_lob = (f1_mean - mean(f1_mean, na.rm = TRUE)) / sd(f1_mean, na.rm = TRUE),
-    f2_lob = (f1_mean - mean(f2_mean, na.rm = TRUE)) / sd(f1_mean, na.rm = TRUE)
-  ) %>%
-  ungroup() %>%
-  filter(!is.na(stress))
-
-f1_priors <- c(
-  prior(normal(0, 0.5), class = "b"),
-  prior(cauchy(0, 1), class = "sd"),
-  prior(cauchy(0, 1), class = "sigma")
-)
-  
-m_f1 <- brm(
-  f1_lob ~ stress * session +
-    (1 | participant) +
-    (1 | item),
-  data = bda_data,
-  warmup = 2000, iter = 4000, chains = 4,
-  family = gaussian(),
-  cores = 4,
-  prior = f1_priors,
-  control = list(adapt_delta = 0.99, max_treedepth = 20),
-  file = here("models", "m_f1")
-)
-
-conditional_effects(m_f1)
-
-f2_priors <- c(
-  prior(normal(0, 0.5), class = "b"),
-  prior(cauchy(0, 1), class = "sd"),
-  prior(cauchy(0, 1), class = "sigma")
-)
-
-m_f2 <- brm(
-  f2_lob ~ stress * session +
-    (1 | participant) +
-    (1 | item),
-  data = bda_data,
-  warmup = 2000, iter = 4000, chains = 4,
-  family = gaussian(),
-  cores = 4,
-  prior = f2_priors,
-  control = list(adapt_delta = 0.99, max_treedepth = 20),
-  file = here("models", "m_f2")
-)
-
-conditional_effects(m_f2)
-

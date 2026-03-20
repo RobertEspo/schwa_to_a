@@ -25,9 +25,9 @@ knitr::opts_chunk$set(
 
 set.seed(20251108)
 
-source(here::here("scripts","r","00_libs.R"))
-source(here::here("scripts","r","01_helpers.R"))
-source(here::here("scripts","r","02_load_data.R"))
+library("tidyverse")
+library("here")
+library("knitr")
 
 theme_psllt <- function(...) {
   list(
