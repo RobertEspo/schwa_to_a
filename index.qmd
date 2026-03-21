@@ -26,8 +26,6 @@ knitr::opts_chunk$set(
 set.seed(20251108)
 
 source(here::here("scripts","r","00_libs.R"))
-source(here::here("scripts","r","01_helpers.R"))
-source(here::here("scripts","r","02_load_data.R"))
 
 theme_psllt <- function(...) {
   list(
@@ -48,7 +46,13 @@ theme_set(theme_grey(base_size = 30))
 
 ::: {.fragment .fade-up}
 ::: {.fragment .semi-fade-out}
-L1 English L2 Spanish pronunciation of unstressed /a/
+Input Quantity & Quality
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Unstressed /a/ in Spanish
 :::
 :::
 
@@ -60,121 +64,136 @@ Methodology
 
 ::: {.fragment .fade-up}
 ::: {.fragment .semi-fade-out}
-Preliminary results
+Some results
 :::
-:::
-
-# Spanish unstressed /a/ {.transition}
-
-## The vowel space
-
-![](assets/phonetics_final_figs/vowels.png)
-
-::: footer
-@bradlow1995comparative; @flemming2009phonetics
-:::
-
-## Effects of stress on vowel quality
-
-::: {.fragment .fade-up}
-Unstressed vowels are reduced in English, but not Spanish
 :::
 
 ::: {.fragment .fade-up}
+::: {.fragment .semi-fade-out}
+Some discussion & future direction
+:::
+:::
+
+# Input in an L2 {.transition}
+
+## Contact with L1 speakers
+
+- Contact with L1 speakers helps accent
+
+![](figs/obviously.gif)
+
+::: {.fragment}
+- Especially...
+  - in informal domains [@moyer2009input; @purcell1980predictors]
+  - when personal, social connections are built [@moyer2004age; @flege1995factors]
+
+:::
+
+## A common conundrum
+
+- L2 classroom learners are surrounded by [other L2 students]{.emph} [@gass2013input]
+- Either learners interact with their L2 learner peers or the teacher in the classroom...
+
+:::{.fragment}
+- Learners produce [greater quantity]{.emph} and [greater diversity]{.emph} of output [in groups]{.emph} [@long1976doing]
+- So it makes sense why the communicative approach is popular [@mitchell2002communicative]
+
+:::
+
+## Quality versus Quantity for Accent
+
+- Can L2 learners develop [more target-like phonetics]{.emph} with [L2 input]{.emph}?
+- That is... how do [input quantity]{.emph} and [input quality]{.emph} impact phonetic development?
+
+![](figs/accents.jpg)
+
+## Quality versus Quantity for Accent
+
+![](figs/middlebury.jpg){.absolute top="0" right="0" width="200" height="40"}
+
+- @casillas2020phonetic investigated acquisition of L1 English L2 Spanish /t d/
+- Over 7 weeks, collected /t d/ production and self-assessments of...
+  - Use: Spanish/English
+  - Input: Native, non-native (+, =, -)
+- Participants became more target-like overall
+- Only [high English use]{.emph} associated with [less movement]{.emph} towards target-like production
+
+## What about [ə]...
+
+::: {.fragment}
+Unstressed vowels are [reduced]{.emph} in English, but not Spanish
+:::
+
+::: {.fragment .fade-up}
+L1 English
+
 [ˈæɾəm] 'atom'
 
-[əˈtʰɑmɪk] 'atomic'
 :::
 
 ::: {.fragment .fade-up}
-[ˈkasa] 'house'
+[əˈtʰɑmɪk] 'atomic'
+
 :::
 
-## L1 English L2 Spanish /a/ {auto-animate=TRUE}
+::: {.fragment .fade-up}
+L1 Spanish
+
+[ˈkasa] 'house'
+[maˈma] 'mom'
+
+:::
+
+::: {.fragment .fade-up}
+(Beginner) L1 English L2 Spanish
+
+[ˈkasə] 'house'
+[məˈma] 'mom'
+
+:::
+
+## L1 English L2 Spanish /a/
 L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
 
-## L1 English L2 Spanish /a/ {auto-animate=TRUE}
-L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
-
+::: {.fragment .fade-up}
 @iruela1997adquisicion
 
-## L1 English L2 Spanish /a/ {auto-animate=TRUE}
-L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+:::
 
-@iruela1997adquisicion
-
+::: {.fragment .fade-up}
 @cobb2009pronunciacion
 
-## L1 English L2 Spanish /a/ {auto-animate=TRUE}
-L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+:::
 
-@iruela1997adquisicion
-
-@cobb2009pronunciacion
-
+::: {.fragment .fade-up}
 @aldrich2014acquisition
 
-## L1 English L2 Spanish /a/ {auto-animate=TRUE}
-L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+:::
 
-@iruela1997adquisicion
-
-@cobb2009pronunciacion
-
-@aldrich2014acquisition
-
+::: {.fragment .fade-up}
 @cobb2015adult
 
-## L1 English L2 Spanish /a/ {auto-animate=TRUE}
-L1 English L2 Spanish speakers have issues acquiring [unstressed /a/]{.emph}
+:::
 
-@iruela1997adquisicion
-
-@cobb2009pronunciacion
-
-@aldrich2014acquisition
-
-@cobb2015adult
-
+::: {.fragment .fade-up}
 @bland2016speech
 
-## Let's focus on one
-
-Development of stressed and unstressed /a/ in L2 Spanish
-
-::: footer
-@aldrich2014acquisition
 :::
 
-## Participants
+## Why so much trouble with unstressed /a/?
 
-- 9 at-home L1 English L2 Spanish
-- 10 study abroad L1 English L2 Spanish
-- 5 L1 Spanish
+- [Vowel quality]{.emph} is a major cue for English stress [@tremblay2021dutch]
+- L1 English L2 Spanish learners must adjust their [cue weighting]{.emph} of stress to accurately perceive/produce Spanish stress [@ortega2013english]
 
-::: footer
-@aldrich2014acquisition
-:::
+English: [vowel quality]{.emph}, duration, loudness, pitch
 
-## Methodology
+Spanish: [duration]{.emph}, loudness, pitch
 
-- Oral interview
-- Read a short story
-- Read a word list
+## Why so much trouble with unstressed /a/?
 
-- Formant values measured at vowel midpoint
-
-::: footer
-@aldrich2014acquisition
-:::
-
-## Results
-
-The L2 Spanish speakers centralized unstressed /a/
-
-::: footer
-@aldrich2014acquisition
-:::
+- So acquisition of unstressed /a/ is wrapped up in...
+  - [phonetics]{.emph}: modification of tongue height to approach Spanish /a/
+  - [word prosody]{.emph}: modification of stress cues
 
 # The present study {.transition}
 
@@ -182,15 +201,19 @@ The L2 Spanish speakers centralized unstressed /a/
 
 1. Do L1 English L2 Spanish learners in an immersion program demonstrate less centralization of unstressed /a/ over the course of six weeks?
 
-## participants
+2. Does their development depend on a measure of language input?
 
-10 L1 English L2 Spanish upper A2 learners
-6 week immersion program
+## Participants
 
-## materials & task
+- [10]{.emph} L1 English L2 Spanish upper A2 learners
+- [7 weeks]{.emph} of domestic immersion program
+- Received no instruction in pronunciation from classes
+
+
+## Materials & Task
 
 ::: {.fragment .fade-up}
-participants shadowed individual words
+delayed shadowing (target word in carrier phrase)
 :::
 
 ::: {.fragment .fade-up}
@@ -227,102 +250,212 @@ kaka
 
 eda
 
-## Formant extraction
+## Materials & Task {.smaller}
 
-::: {.fragment .fade-up}
-Montreal Forced Aligner. Corrections have started.
-:::
+Weekly self assessments of...
 
-::: {.fragment .fade-up}
-FastTrack [@barreda2021fast]. 
+- Language use
+  - Spanish
+  - English
+- Language input
+  - Native speaker
+  - Non-native speaker
+    - Better
+    - Same
+    - Worse
 
-Set to 3 formants (so it prioritizes the first 3 formants). 
+## So what are we actually measuring?
 
-Extracts values every 2 ms.
-:::
+![](figs/en_es_vowels.png)
 
 ::: footer
-@de2022l1; @amengual2020language
+@montiel2024trabajo
 :::
 
-## data processing
+## F1 Extraction
 
-Vowels were of different durations, so...
-
-::: incremental
-1. time was normalized
-2. normalized times were binned into 11 bins
-3. f1 and f2 averaged for each bin
-4. plotted to f1xf2 space to see trajectory
+::: {.fragment .fade-up}
+- Montreal Forced Aligner with manual corrections
 :::
 
-## Averaged trajectories
+::: {.fragment .fade-up}
+- `Praat Mass Analyzer` [@vargo2025praat]
+- Extracts values every 10% of segment
+:::
 
-![](assets/phonetics_final_figs/average_trajectories.png)
+## F1 Extraction
 
-## Averaged trajectories
+- F1 values were averaged for each item [@jacewicz2011vowel]
+- F1 values normalized on a per-speaker basis [@lobanov1971classification]
+  - This removes baseline differences between participants (e.g., vocal tract size differences)
+  - Allows us to look at how participants change relative to one another
 
-```{r}
-#| echo: false
-knitr::include_graphics(here("assets","phonetics_final_figs","average_trajectories.gif"))
-```
+## F1 Extraction
 
-## Trajectories of one participant
+![](figs/gota.png)
 
-![](assets/phonetics_final_figs/avg_trajectory_ems.png)
+## Data Analysis (quick & dirty...) {.smaller}
 
-## Trajectory of one participant
+- Model: Bayesian hierarchical regression (Gaussian)
+- Dependent variable: F1 (scaled, continuous)
+- Predictors: Week, Total Spanish use, Total English use, Native speaker input, Non-native speaker input, Better NN input, Same NN input, Worse NN input
+  - All predictors scaled except for session
+  - All predictors treated as continuous
+- Random intercepts:  Participant, item
+- Random slopes: Session
 
-```{r}
-#| echo: false
-knitr::include_graphics(here("assets","phonetics_final_figs","average_trajectories_ems.gif"))
-```
+# Results {.transition}
 
-# Going Forward {.transition}
+## Stressed versus Unstressed /a/
+
+![](figs/p_gg_f1_ce.png)
+
+::: {.notes}
+Unstressed /a/ approaches stressed /a/ by the end of the the seven weeks.
+Exactly what we expect.
+:::
+
+## What about individual changes?
+
+![](figs/p_f1_delta.png)
+
+## Total Use of Spanish/English
+
+![](figs/p_gg_f1_es_en_use_ce.png)
+
+::: {.notes}
+Obvious results:
+- more spanish => faster acq
+- more english => slower acq
+- less spanish => almost no development!
+- less english => faster acq
+
+:::
+
+## Native versus Non-Native Input
+
+![](figs/p_gg_f1_span_input_ce.png)
+
+::: {.notes}
+- non-native: slopes are identical, but +1 starts off in a better spot
+- less native input => faster acq
+- more native input => slower acq
+Maybe because they're interacting with teachers?
+Maybe because during interaction, natives talk fast & the learner can't pay attention to everything?
+:::
+
+## BETTER
+
+![](figs/p_gg_m_f1_qual_better_ce.png)
+
+::: {.notes}
+Less contact w/ +prof => faster acq
+More contact w/ +prof => slower acq
+But notice that the people with more contact w/ +prof start off better to begin with!
+:::
+
+## BETTER + WORSE
+
+![](figs/p_gg_m_f1_qual_worse_ce.png)
+
+::: {.notes}
+Less contact w/ -prof => slower acq
+More contact w/ -prof => faster acq
+
+:::
+
+## BETTER + WORSE + SAME
+
+![](figs/p_gg_m_f1_qual_same_ce.png)
+
+::: {.notes}
+More contact with =prof => not meaningful for development.
+But notice that ppl w/ lower =prof start off in a better spot...
+
+:::
+
+# Discussion {.transition}
+
+## Some expected findings and implications
+
+- Over 7 weeks of domestic immersion, unstressed /a/ becomes more similar to stressed /a/
+
+[ˈkasə] → [ˈkasa]
+
+## Some expected findings and implications
+
+- L1 English L2 Spanish are learning...
+  - that [ə] is not used in Spanish
+  - what [are]{.emph} and [aren't]{.emph} cues to Spanish stress
+
+- Development in... 
+  - [phonetics]{.emph}: learning how to produce /a/ in Spanish
+  - [word prosody]{.emph}: learning Spanish stress cues, unlearning English stress cues
+
+## Some more expected findings
+
+- [More]{.emph} English use →  [slower]{.emph} acquisition
+- [Less]{.emph} English use →  [faster]{.emph} acquisition
+
+
+- [More]{.emph} Spanish use →  [faster]{.emph} acquisition
+- [Less]{.emph} Spanish use →  [slower]{.emph} acquisition
+
+## Some unexpected findings!
+
+- [More]{.emph} interaction with [natives]{.emph} →  [slower]{.emph} acquisition
+- [More]{.emph} interaction with [more proficient L2]{.emph} →  [slower]{.emph} acquisition
+
+## A possible explanation
+
+::: {.fragment}
+- learners speak more during group activities than teacher-led activities [@long1976doing]
+
+:::
+
+::: {.fragment}
+- lower prof L2 learner in dyad of low + high prof learners speak less in some conditions [@yule1990resolving]
+
+:::
+
+::: {.fragment}
+- learners talk more with other learners than L1 speakers [@porter1986learners]
+
+:::
+
+::: {.fragment}
+- So maybe this is a matter of [output]{.emph} [@swain1993output]?
+
+:::
 
 ## What can this tell us?
 
-- What we can expect from 6 weeks of immersion
+- What we can expect from 7 weeks of immersion
 - What we can expect without explicit instruction on unstressed /a/
+- Acquisition of word stress cues
+- L1/L2 interaction
+
 - Now we can think of interventions!
 
-## Suggestions?
+## The bottom line
 
-::: {.fragment .fade-up}
-::: {.fragment .semi-fade-out}
-Need to correct remaining segmentations
-:::
-:::
+- Learners improved overall no matter what!
 
-::: {.fragment .fade-up}
-::: {.fragment .semi-fade-out}
-run GAMMs model
-:::
+::: {.fragment}
+- The strongest predictors were `total English use`, `total Spanish use`, and `L2 input of the same prof level`
+
 :::
 
-::: {.fragment .fade-up}
-::: {.fragment .semi-fade-out}
-Compare unstressed Spanish /a/ to English /ə/ and /ɑ/
-:::
-:::
+# Future Research {.transition}
 
-::: {.fragment .fade-up}
-::: {.fragment .semi-fade-out}
-Euclidean distance measures
-:::
-:::
+## Going Forward with this Analysis...
 
-::: {.fragment .fade-up}
-::: {.fragment .semi-fade-out}
-Thinking of getting measurements at 10% intervals instead of every 2 ms
-:::
-:::
-
-::: {.fragment .fade-up}
-::: {.fragment .semi-fade-out}
-Use data from different tasks
-:::
-:::
+- Need to model F2 as well (back-frontness, just not height!)
+- Model with GAMMs to see if we can see exactly when a major change occurs
+- Will probably need to reassess the F1 processing
+  - Might not make sense to average all 10 datapoints from each vowel... previous research used 5 points [@jacewicz2011vowel]
+- Data from other tasks (e.g., picture naming) is available
+- Compare Spanish /a/ to English /ə/ and /ɑ/
 
 ## Thanks! {.final visibility="uncounted"}
 
@@ -343,13 +476,6 @@ Use data from different tasks
 
   <tr>
     <td style="text-align: right; padding-right: 10px;">
-      <a href="https://www.jvcasillas.com/quarto-rutgers-theme/">{{< fa solid link >}}</a>
-    </td>
-    <td>jvcasillas.com/quarto-rutgers-theme</td>
-  </tr>
-
-  <tr>
-    <td style="text-align: right; padding-right: 10px;">
       <a href="https://robertespo.github.io/">{{< fa solid link >}}</a>
     </td>
     <td>robertespo.github.io</td>
@@ -361,9 +487,17 @@ Use data from different tasks
     </td>
     <td>\@RobertEspo</td>
   </tr>
+  
+    <tr>
+    <td style="text-align: right; padding-right: 10px;">
+      <a href="https://www.jvcasillas.com/quarto-rutgers-theme/">{{< fa solid link >}}</a>
+    </td>
+    <td>jvcasillas.com/quarto-rutgers-theme</td>
+  </tr>
+  
 </table>
 
-## References {visibility="uncounted"}
+## References {visibility="uncounted", .scrollable}
 
 ::: {#refs .smaller}
 :::

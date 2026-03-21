@@ -1,0 +1,34 @@
+---
+title: "Summaries"
+author: "Robert Esposito"
+format: pdf
+editor: visual
+---
+
+# Summary of references
+
+## @pica1995can
+
+## @pica1996language
+
+This study asked whether L2 learners' interaction with other learners can address three of their supposed needs for L2 learning—that is, their needs for L2 input modified toward comprehensibility, for feedback focused on form, and for modification of output—in ways that interaction with native speakers (NSs) has been shown to do. To address this question, the interaction of five dyads of English L2 learners was compared with that of five dyads of learners and English NSs on two communication tasks.
+
+Results of the comparison revealed similarities in the types of modified input and feedback the learners and NSs offered other learners in their respective dyads and in both the type and amount of output modifications they produced. The learners received less modified input from other learners than from NSs. As expected, learners' morphosyntax conformed less to standard English than did that of NSs. This pattern was found throughout the learners' input and feedback but was far less evident in feedback formed through simple segmentation of previous utterances. The study thus indicated that interaction between L2 learners can address some of their input, feedback, and output needs but that it does not provide as much modified input and feedback as interaction with NSs does.
+
+## @yu2017can
+
+Case study. High proficiency L2 learners still benefit from interactions with lower proficiency L2 learners.
+
+## @sato2013beliefs
+
+Training L2 learners how to correct each other can be useful.
+
+## @long1976doing
+
+Group activities give L2 learners more opportunities to talk and develop more advanced thoughts.
+
+## @porter1986learners
+
+Learners talk more with other learners than native speakers in group activities. 
+
+# Summary of topics
