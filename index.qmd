@@ -1,5 +1,5 @@
 ---
-title: "Schwa to /a/: Phonetic Category Development in L2 Spanish"
+title: "Schwa to /a/: Input Quantity and Quality in L2 Morphophonoloy"
 author: "Robert Esposito"
 institute: "Rutgers University"
 date: "Last update: `r Sys.Date()`"
@@ -100,10 +100,9 @@ Some discussion & future direction
 
 :::
 
-## Quality versus Quantity for Accent
+## A common conundrum
 
-- Can L2 learners develop [more target-like phonetics]{.emph} with [L2 input]{.emph}?
-- That is... how do [input quantity]{.emph} and [input quality]{.emph} impact phonetic development?
+How do [input quantity]{.emph} and [input quality]{.emph} impact phonetic development?
 
 ![](figs/accents.jpg)
 
@@ -192,21 +191,21 @@ Spanish: [duration]{.emph}, loudness, pitch
 ## Why so much trouble with unstressed /a/?
 
 - So acquisition of unstressed /a/ is wrapped up in...
-  - [phonetics]{.emph}: modification of tongue height to approach Spanish /a/
+  - [phonetics]{.emph}: modification of tongue height & backness to approach Spanish /a/
   - [word prosody]{.emph}: modification of stress cues
 
 # The present study {.transition}
 
 ## Research Question
 
-1. Do L1 English L2 Spanish learners in an immersion program demonstrate less centralization of unstressed /a/ over the course of six weeks?
+1. Do L1 English L2 Spanish learners in an immersion program demonstrate less centralization of unstressed /a/ over the course of seven weeks?
 
 2. Does their development depend on a measure of language input?
 
 ## Participants
 
-- [10]{.emph} L1 English L2 Spanish upper A2 learners
-- [7 weeks]{.emph} of domestic immersion program
+- [Ten]{.emph} L1 English L2 Spanish upper A2 learners
+- [Seven weeks]{.emph} of domestic immersion program
 - Received no instruction in pronunciation from classes
 
 
@@ -344,7 +343,7 @@ Maybe because they're interacting with teachers?
 Maybe because during interaction, natives talk fast & the learner can't pay attention to everything?
 :::
 
-## BETTER
+## BETTER L2 input
 
 ![](figs/p_gg_m_f1_qual_better_ce.png)
 
@@ -354,7 +353,7 @@ More contact w/ +prof => slower acq
 But notice that the people with more contact w/ +prof start off better to begin with!
 :::
 
-## BETTER + WORSE
+## BETTER + WORSE L2 input
 
 ![](figs/p_gg_m_f1_qual_worse_ce.png)
 
@@ -364,7 +363,7 @@ More contact w/ -prof => faster acq
 
 :::
 
-## BETTER + WORSE + SAME
+## BETTER + WORSE + SAME L2 input
 
 ![](figs/p_gg_m_f1_qual_same_ce.png)
 
@@ -414,7 +413,7 @@ But notice that ppl w/ lower =prof start off in a better spot...
 :::
 
 ::: {.fragment}
-- lower prof L2 learner in dyad of low + high prof learners speak less in some conditions [@yule1990resolving]
+- in dyad of low + high prof learners, lower prof L2 learner speak less in some conditions [@yule1990resolving]
 
 :::
 
@@ -425,6 +424,7 @@ But notice that ppl w/ lower =prof start off in a better spot...
 
 ::: {.fragment}
 - So maybe this is a matter of [output]{.emph} [@swain1993output]?
+- Maybe it's a matter of [attention]{.emph}?
 
 :::
 
@@ -442,7 +442,8 @@ But notice that ppl w/ lower =prof start off in a better spot...
 - Learners improved overall no matter what!
 
 ::: {.fragment}
-- The strongest predictors were `total English use`, `total Spanish use`, and `L2 input of the same prof level`
+- The clearest, strongest predictors were `total English use` and `total Spanish use`
+- Interacting with speakers much higher in proficiency than you may slow [phonetic]{.emph} development?
 
 :::
 

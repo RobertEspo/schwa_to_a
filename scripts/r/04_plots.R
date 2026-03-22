@@ -128,7 +128,7 @@ p_f1_ce <- conditional_effects(
 p_gg_f1_ce <- plot(p_f1_ce, plot = FALSE, line_args = list(size = 4))[[1]] +
   scale_x_continuous(expand = c(0, 0)) +
   geom_line(aes(group = effect2__, color = effect2__), size = 1.5) +
-  scale_color_manual(name = NULL, labels = c("stressed","unstressed"),
+  scale_color_manual(name = NULL, labels = c("unstressed /a/","stressed /a/"),
                      values = alpha(viridis::viridis_pal(option = "B", end = 0.85)(2), 0.1)) +
   labs(y = "Predicted normalized F1", x = "Week") +
   ds4ling::ds4ling_bw_theme(base_size = 12) +
@@ -683,14 +683,3 @@ ggsave(
   height = 6,
   dpi = 300
 )
-
-
-
-
-
-
-
-
-
-
-
